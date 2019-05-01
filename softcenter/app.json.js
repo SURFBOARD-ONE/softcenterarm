@@ -1,10 +1,10 @@
 {
     "apps": [
         {
-            "build_date": "2019-04-20_00:25:15", 
+            "build_date": "2019-05-01_09:56:59", 
             "description": "科学上网", 
             "home_url": "Main_Ss_Content.asp", 
-            "md5": "dc4a84c4991b3d5b745c53629133c689", 
+            "md5": "48cd86b212b74e5047b5701e3908cad2", 
             "name": "shadowsocks", 
             "tar_url": "shadowsocks/shadowsocks.tar.gz", 
             "title": "科学上网", 
@@ -171,10 +171,10 @@
             "version": "0.1.6"
         }, 
         {
-            "build_date": "2019-04-26_00:18:33", 
+            "build_date": "2019-05-01_09:57:16", 
             "description": "v2ray", 
             "home_url": "Module_v2ray.asp", 
-            "md5": "16e6827caeef63f5dbeed614191f1961", 
+            "md5": "d9c81938e2e673add7fb7b3113980215", 
             "name": "v2ray", 
             "tar_url": "v2ray/v2ray.tar.gz", 
             "title": "v2ray", 
@@ -211,14 +211,14 @@
             "version": "3.0"
         }, 
         {
-            "build_date": "2019-03-11_23:42:19", 
+            "build_date": "2019-04-30_23:46:08", 
             "description": "广告屏蔽大师", 
             "home_url": "Module_adbyby.asp", 
-            "md5": "2191fc3bc76c4490ed7e0fc47cddcb27", 
+            "md5": "fbc16cadbc37bf969094d98d88e52f62", 
             "name": "adbyby", 
             "tar_url": "adbyby/adbyby.tar.gz", 
             "title": "adbyby", 
-            "version": "1.1"
+            "version": "1.0"
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenter/master", 
