@@ -211,10 +211,10 @@
             "version": "3.0"
         }, 
         {
-            "build_date": "2019-04-30_23:46:08", 
+            "build_date": "2019-05-01_10:00:58", 
             "description": "广告屏蔽大师", 
             "home_url": "Module_adbyby.asp", 
-            "md5": "fbc16cadbc37bf969094d98d88e52f62", 
+            "md5": "b280fcb8c04dcbe91f5d828aace8e6d1", 
             "name": "adbyby", 
             "tar_url": "adbyby/adbyby.tar.gz", 
             "title": "adbyby", 
