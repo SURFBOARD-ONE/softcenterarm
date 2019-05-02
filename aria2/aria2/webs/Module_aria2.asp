@@ -267,7 +267,7 @@ function load_default_value(o, s) {
 }
 function version_check() {
   $.ajax({
-    url: 'http://sc.paldier.com/aria2/config.json.js',
+    url: 'http://scarm.paldier.com/aria2/config.json.js',
     type: 'GET',
     dataType: 'jsonp',
     success: function(res) {
