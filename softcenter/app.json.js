@@ -111,14 +111,14 @@
             "version": "1.1"
         }, 
         {
+            "build_date": "2019-05-04_19:37:13", 
             "description": "koolshare小宝开发的基于http2的远程控制，仅支持远程管理路由器+nas+windows远程桌面。", 
             "home_url": "Module_ddnsto.asp", 
-            "md5": "be6faa9d34ba80b30937ce3d2ffc1b67", 
-            "module": "ddnsto", 
+            "md5": "42c5315d66df32ef03f7bc7a56eb4863", 
             "name": "ddnsto", 
             "tar_url": "ddnsto/ddnsto.tar.gz", 
             "title": "DDNSTO远程控制", 
-            "version": "2.9.1"
+            "version": "2.9.2"
         }, 
         {
             "build_date": "2019-03-11_23:46:21", 
@@ -151,14 +151,14 @@
             "version": "0.2"
         }, 
         {
+            "build_date": "2019-05-04_19:35:44", 
             "description": "EasyExplorer 跨设备文件同步+DLNA流媒体", 
             "home_url": "Module_easyexplorer.asp", 
-            "md5": "15f74863d15645b0eac913249fd58307", 
-            "module": "easyexplorer", 
+            "md5": "028e755bcdde24e6aba6bdb2ff14ea22", 
             "name": "EasyExplorer", 
             "tar_url": "EasyExplorer/EasyExplorer.tar.gz", 
             "title": "EasyExplorer文件同步", 
-            "version": "0.0.9"
+            "version": "1.1"
         }, 
         {
             "build_date": "2019-03-26_11:27:56", 
