@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
@@ -7,7 +7,7 @@
 <meta HTTP-EQUIV="Expires" CONTENT="-1"/>
 <link rel="shortcut icon" href="images/favicon.png"/>
 <link rel="icon" href="images/favicon.png"/>
-<title>软件中心 - EasyExplorer文件同步</title>
+<title>软件中心 - 易有云（EasyExplorer）</title>
 <link rel="stylesheet" type="text/css" href="index_style.css"/> 
 <link rel="stylesheet" type="text/css" href="form_style.css"/>
 <link rel="stylesheet" type="text/css" href="usp_style.css" />
@@ -157,7 +157,6 @@
 input[type=button]:focus {
     outline: none;
 }
-
 </style>
 <script>
 jQuery.ajax = (function(_ajax) {
@@ -245,7 +244,6 @@ function init(){
         $G('easyexplorer_website').disabled = false;
     }
 }
-
 function get_status() {
     $j.ajax({
         url: 'applydb.cgi?current_page=Module_easyexplorer.asp&next_page=Module_easyexplorer.asp&group_id=&modified=0&action_mode=+Refresh+&action_script=easyexplorer_status.sh&action_wait=&first_time=&preferred_lang=CN',
@@ -277,7 +275,6 @@ function check_easyexplorer_status(){
                 document.getElementById("status").innerHTML = easyexplorer_status;
                 return true;
             }
-
             if(_responseLen == response.length){
                 noChange_status++;
             }else{
@@ -301,7 +298,6 @@ function toggle_switch(){
         rrt.checked = true;
     }
 }
-
 function buildswitch(){
     $j("#switch").click(
     function(){
@@ -312,7 +308,6 @@ function buildswitch(){
         }
     });
 }
-
 function initial_dir() {
     var __layer_order = "0_0";
     var url = "/getfoldertree.asp";
@@ -331,7 +326,6 @@ function initial_dir_status(data) {
         disk_flag = 1;
     }
 }
-
 function check_dir_path() {
     var dir_array = document.getElementById('easyexplorer_dir').value.split("/");
     if (dir_array[dir_array.length - 1].length > 21)
@@ -357,7 +351,6 @@ function get_layer_items(layer_order) {
         }
     });
 }
-
 function get_tree_items(treeitems) {
     document.aidiskForm.test_flag.value = 0;
     this.isLoading = 1;
@@ -651,11 +644,9 @@ function onSubmitCtrl(o, s) {
     document.form.action_mode.value = s;
     updateOptions();
 }
-
 function done_validating(action){
     return true;
 }
-
 function updateOptions(){
     document.form.enctype = "";
     document.form.encoding = "";
@@ -663,40 +654,31 @@ function updateOptions(){
     document.form.action_script.value = "easyexplorer_config.sh";
     document.form.submit();
 }
-
 function menu_hook(title, tab) {
         tabtitle[tabtitle.length -1] = new Array("", "EasyExplorer文件同步");
         tablink[tablink.length -1] = new Array("", "Module_easyexplorer.asp");
 }
-
 function showSSLoadingBar(seconds){
     if(window.scrollTo)
         window.scrollTo(0,0);
-
     disableCheckChangedStatus();
-
     htmlbodyforIE = document.getElementsByTagName("html");  //this both for IE&FF, use "html" but not "body" because <!DOCTYPE html PUBLIC.......>
     htmlbodyforIE[0].style.overflow = "hidden";      //hidden the Y-scrollbar for preventing from user scroll it.
-
     winW_H();
-
     var blockmarginTop;
     var blockmarginLeft;
     if (window.innerWidth)
         winWidth = window.innerWidth;
     else if ((document.body) && (document.body.clientWidth))
         winWidth = document.body.clientWidth;
-
     if (window.innerHeight)
         winHeight = window.innerHeight;
     else if ((document.body) && (document.body.clientHeight))
         winHeight = document.body.clientHeight;
-
     if (document.documentElement  && document.documentElement.clientHeight && document.documentElement.clientWidth){
         winHeight = document.documentElement.clientHeight;
         winWidth = document.documentElement.clientWidth;
     }
-
     if(winWidth >1050){
         winPadding = (winWidth-1050)/2;
         winWidth = 1105;
@@ -705,12 +687,9 @@ function showSSLoadingBar(seconds){
     else if(winWidth <=1050){
         blockmarginLeft= (winWidth)*0.3+document.body.scrollLeft-160;
     }
-
     if(winHeight >660)
         winHeight = 660;
-
     blockmarginTop= winHeight*0.3-140
-
     document.getElementById("loadingBarBlock").style.marginTop = blockmarginTop+"px";
     document.getElementById("loadingBarBlock").style.marginLeft = blockmarginLeft+"px";
     document.getElementById("loadingBarBlock").style.width = 770+"px";
@@ -722,8 +701,6 @@ function showSSLoadingBar(seconds){
     y = 0;
     LoadingLocalProgress(seconds);
 }
-
-
 function LoadingLocalProgress(seconds){
     document.getElementById("LoadingBar").style.visibility = "visible";
     if (document.form.easyexplorer_enable.value != "1"){
@@ -731,7 +708,6 @@ function LoadingLocalProgress(seconds){
     }else{
         document.getElementById("loading_block3").innerHTML = "easyexplorer启用中 ..."
     }
-
     y = y + progress;
     if(typeof(seconds) == "number" && seconds >= 0){
         if(seconds != 0){
@@ -753,7 +729,6 @@ function LoadingLocalProgress(seconds){
         }
     }
 }
-
 function reload_Soft_Center(){
     location.href = "/Main_Soft_center.asp";
 }
@@ -777,7 +752,6 @@ function version_show(){
 </head>
 <body onload="init();">
     <div id="TopBanner"></div>
-    <!-- floder tree-->
   <div id="DM_mask" class="mask_bg"></div>
   <div id="folderTree_panel" class="panel_folder">
    <table>
@@ -860,17 +834,16 @@ function version_show(){
                             <table width="760px" border="0" cellpadding="5" cellspacing="0" bordercolor="#6b8fa3" class="FormTitle" id="FormTitle">
                                 <tr>
                                     <td bgcolor="#4D595D" colspan="3" valign="top"><div>&nbsp;</div>
-                                        <div class="formfonttitle">软件中心 - EasyExplorer文件同步</div>
+                                        <div class="formfonttitle">易有云（EasyExplorer）跨平台文件同步</div>
                                         <div style="float:right; width:15px; height:25px;margin-top:-20px">
                                             <img id="return_btn" onclick="reload_Soft_Center();" align="right" style="cursor:pointer;position:absolute;margin-left:-30px;margin-top:-25px;" title="返回软件中心" src="/images/backprev.png" onMouseOver="this.src='/images/backprevclick.png'" onMouseOut="this.src='/images/backprev.png'"></img>
                                         </div>
                                         <div style="margin-left:5px;margin-top:10px;margin-bottom:10px"><img src="/images/New_ui/export/line_export.png"></div>
                                         <div class="SimpleNote">
-                                            <h3>EasyExplorer 跨设备文件同步+DLNA流媒体!</h3>
-                                            <li><i>【注意】：请保护好你的DDNSTO/EasyExplorer的Token，如果被其他人获知，那么下一个摄影大师可能就是你！！！</i></li>
-                                            <li> EasyExplorer文件同步目前处于测试阶段，仅提供给koolshare固件用户使用，请勿用于反动、不健康等用途；</li>
-                                            <li> 教程：<a id="gfw_number" href="http://koolshare.cn/forum-98-1.html" target="_blank"><i>EasyExplorer文件同步使用教程</i></a></li>
-                                            <li>【注意】：因验证方式改变，原有Token和设置失效，最新插件需要您重新登录控制台获取Token并重新设置。</li>
+                                            <li> EasyExplorer支持PC、Mac、iOS、安卓、NAS和路由器平台，iOS易有云公测中：<a href="http://koolshare.cn/thread-159997-1-1.html" target="_blank"><i>http://koolshare.cn/thread-159997-1-1.html</i></a></li>
+                                            <li><i>开启方法：</i>登录控制台，注册后获得Token/令牌，填入本插件，随后选择共享目录后点击提交。</li>
+                                            <li><i>使用教程：</i><a href="http://koolshare.cn/thread-129199-1-1.html" target="_blank"><i>EasyExplorer文件同步使用教程</i></a>&nbsp;&nbsp;<a href="https://github.com/koolshare/rogsoft/blob/master/easyexplorer/Changelog.txt" target="_blank"><em><u>[ 插件更新日志 ]</u></em></a></li>
+                                            <li><i>注意事项：</i>请保护好你的ddnsto或EasyExplorer的Token，如果被其他人获知，那么下一个摄影大师可能就是你！！！</li>
                                         </div>
                                         <table width="100%" border="1" align="center" cellpadding="4" cellspacing="0" bordercolor="#6b8fa3" class="FormTable">
                                             <thead>
@@ -903,13 +876,13 @@ function version_show(){
                                                 <td><span id="status">获取中...</span></td>
                                             </tr>
                                             <tr>
-                                                <th>Token</th>
+                                                <th>Token/令牌</th>
                                                 <td>
                                                     <input style="width:300px;background-image: none;background-color: #576d73;border:1px solid gray" type="password" class="input_ss_table" id="easyexplorer_token" name="easyexplorer_token" maxlength="100" value="" autocomplete="new-password" autocorrect="off" autocapitalize="off" onBlur="switchType(this, false);" onFocus="switchType(this, true);">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th>同步目录</th>
+                                                <th>共享目录</th>
                                                 <td>
                                                  <input type="text" class="input_ss_table" style="width:auto;" name="easyexplorer_dir" value="" maxlength="50" size="40" ondblClick="get_disk_tree();" id="easyexplorer_dir"> <i>双击选择路径</i>
                                                 </td>
@@ -919,7 +892,6 @@ function version_show(){
                                                 <td>
                                                     <a type="button" class="easyexplorer_btn" style="cursor:pointer" target="_blank" href="https://www.ddnsto.com">获取Token</a>
                                                     <a type="button" class="easyexplorer_btn" id="easyexplorer_website" style="cursor:pointer">访问EasyExplorer</a>
-                                                    <a type="button" class="easyexplorer_btn" style="cursor:pointer" target="_blank" href="http://firmware.koolshare.cn/binary/Easy-Explorer/">EasyExplorer全平台下载</a>
                                                 </td>
                                             </tr>
                                         </table>
@@ -955,4 +927,3 @@ var i = 0;
 <!--<![endif]-->
 </script>
 </html>
-

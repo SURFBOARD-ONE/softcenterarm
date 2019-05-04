@@ -2,7 +2,7 @@
 
 MODULE=ddnsto
 title="DDNSTO远程控制"
-VERSION="2.9.1"
+VERSION="2.9.2"
 cd /
 rm -rf /jffs/softcenter/init.d/S70ddnsto.sh
 cp -rf /tmp/$MODULE/bin/* /jffs/softcenter/bin/
