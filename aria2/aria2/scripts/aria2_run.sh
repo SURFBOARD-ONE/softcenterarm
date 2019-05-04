@@ -19,7 +19,7 @@ dbus set aria2_warning=""
 
 echo ""
 echo "#############################################################"
-printf "%0s%50s%10s\n" "#" "Aria2c Auto config Script for Merlin mips" "#"
+printf "%0s%50s%10s\n" "#" "Aria2c Auto config Script for Merlin armv7" "#"
 printf "%0s%37s%23s\n" "#" "Website: http://jffs/softcenter.cn" "#"
 printf "%0s%46s%14s\n" "#" "Author: sadoneli <sadoneli@gmail.com>" "#"
 echo "#############################################################"
