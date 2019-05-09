@@ -171,10 +171,10 @@
             "version": "0.1.6"
         }, 
         {
-            "build_date": "2019-05-01_09:57:16", 
+            "build_date": "2019-05-09_23:18:36", 
             "description": "v2ray", 
             "home_url": "Module_v2ray.asp", 
-            "md5": "d9c81938e2e673add7fb7b3113980215", 
+            "md5": "e232353aee1645279f8fe189619982ab", 
             "name": "v2ray", 
             "tar_url": "v2ray/v2ray.tar.gz", 
             "title": "v2ray", 
