@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # shadowsocks script for AM380 merlin firmware
-# by sadog (sadoneli@gmail.com) from jffs/softcenter.cn
+# by sadog (sadoneli@gmail.com) from koolshare.cn
 
 source /usr/sbin/helper.sh
 CONFIG=$1

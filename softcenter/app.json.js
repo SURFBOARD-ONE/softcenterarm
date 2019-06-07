@@ -51,6 +51,16 @@
             "version": "2.2"
         }, 
         {
+            "build_date": "2019-05-24_23:13:19", 
+            "description": "天翼云盘，为宽带提速而生！！！", 
+            "home_url": "Module_speedup.asp", 
+            "md5": "2041ddfd0e19cd7a003c436f3620e6d5", 
+            "name": "speedup", 
+            "tar_url": "speedup/speedup.tar.gz", 
+            "title": "天翼云盘", 
+            "version": "2.1.1"
+        }, 
+        {
             "build_date": "2019-03-11_23:47:48", 
             "description": "去广告，没烦恼", 
             "home_url": "Module_koolproxy.asp", 
@@ -171,14 +181,14 @@
             "version": "0.1.6"
         }, 
         {
-            "build_date": "2019-05-09_23:18:36", 
+            "build_date": "2019-06-08_00:51:54", 
             "description": "v2ray", 
             "home_url": "Module_v2ray.asp", 
-            "md5": "e232353aee1645279f8fe189619982ab", 
+            "md5": "54a77e066a37413a96e2c6bf05eb9743", 
             "name": "v2ray", 
             "tar_url": "v2ray/v2ray.tar.gz", 
             "title": "v2ray", 
-            "version": "4.13.0"
+            "version": "4.18.0"
         }, 
         {
             "description": "从路由器推送状态及通知的工具。", 
