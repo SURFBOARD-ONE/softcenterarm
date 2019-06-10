@@ -972,7 +972,13 @@ create_dnsmasq_conf(){
 
 	#echo_date 创建dnsmasq.postconf软连接到/jffs/scripts/文件夹.
 	[ ! -L "/jffs/scripts/dnsmasq.postconf" ] && ln -sf /jffs/softcenter/ss/rules/dnsmasq.postconf /jffs/scripts/dnsmasq.postconf
-	echo "server=127.0.0.1" > /tmp/resolv.dnsmasq
+	echo "nameserver 127.0.0.1" > /tmp/resolv.conf
+	ISP_DNS1=$(nvram get wan0_dns|sed 's/ /\n/g'|grep -v 0.0.0.0|grep -v 127.0.0.1|sed -n 1p)
+	ISP_DNS2=$(nvram get wan0_dns|sed 's/ /\n/g'|grep -v 0.0.0.0|grep -v 127.0.0.1|sed -n 2p)
+	IFIP_DNS1=`echo $ISP_DNS1|grep -E "([0-9]{1,3}[\.]){3}[0-9]{1,3}|:"`
+	IFIP_DNS2=`echo $ISP_DNS2|grep -E "([0-9]{1,3}[\.]){3}[0-9]{1,3}|:"`
+	echo "nameserver $IFIP_DNS1" >> /tmp/resolv.conf
+	echo "nameserver $IFIP_DNS2" >> /tmp/resolv.conf
 }
 
 start_haveged(){
@@ -987,8 +993,11 @@ auto_start(){
 }
 
 write_nat_start(){
+	[ $(nvram get buildno_org) -eq 384 ] || {
+	#382/384所有固件自带nat触发重启，二次触发会导致dnsmasq加载不到服务器列表
 	echo_date 添加nat-start触发事件...
 	dbus set __event__onnatstart_ssconfig="/jffs/softcenter/ss/ssconfig.sh"
+	}
 }
 
 remove_nat_start(){
@@ -1739,8 +1748,8 @@ flush_nat(){
 	
 	iptables -t mangle -F SHADOWSOCKS >/dev/null 2>&1 && iptables -t mangle -X SHADOWSOCKS >/dev/null 2>&1
 	iptables -t mangle -F SHADOWSOCKS_GAM > /dev/null 2>&1 && iptables -t mangle -X SHADOWSOCKS_GAM > /dev/null 2>&1
-	iptables -t nat -D OUTPUT -p tcp -m set --match-set router dst -j REDIRECT --to-ports 3333 >/dev/null 2>&1
-	#iptables -t nat -D OUTPUT -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-ports 3333 >/dev/null 2>&1
+	#iptables -t nat -D OUTPUT -p tcp -m set --match-set router dst -j REDIRECT --to-ports 3333 >/dev/null 2>&1
+	iptables -t nat -D OUTPUT -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-ports 3333 >/dev/null 2>&1
 	iptables -t nat -F OUTPUT > /dev/null 2>&1
 	iptables -t nat -X SHADOWSOCKS_EXT > /dev/null 2>&1
 	#iptables -t nat -D PREROUTING -p udp -s $(get_lan_cidr) --dport 53 -j DNAT --to $lan_ipaddr >/dev/null 2>&1
@@ -1997,8 +2006,8 @@ apply_nat_rules(){
 	lan_acess_control
 	#-----------------------FOR ROUTER---------------------
 	# router itself
-	[ "$ss_basic_mode" != "6" ] && iptables -t nat -A OUTPUT -p tcp -m set --match-set router dst -j REDIRECT --to-ports 3333
-	#[ "$ss_basic_mode" != "6" ] && iptables -t nat -A OUTPUT -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-ports 3333
+	#[ "$ss_basic_mode" != "6" ] && iptables -t nat -A OUTPUT -p tcp -m set --match-set router dst -j REDIRECT --to-ports 3333
+	[ "$ss_basic_mode" != "6" ] && iptables -t nat -A OUTPUT -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-ports 3333
 	iptables -t nat -A OUTPUT -p tcp -m mark --mark "$ip_prefix_hex" -j SHADOWSOCKS_EXT
 	
 	# 把最后剩余流量重定向到相应模式的nat表中对应的主模式的链
