@@ -937,25 +937,25 @@ create_dnsmasq_conf(){
 	#ln_conf
 	if [ -f /tmp/custom.conf ];then
 		#echo_date 创建域自定义dnsmasq配置文件软链接到/tmp/etc/dnsmasq.user/custom.conf
-		ln -sf /tmp/custom.conf /tmp/etc/dnsmasq.user/custom.conf
+		cp -r /tmp/custom.conf /tmp/etc/dnsmasq.user/custom.conf
 	fi
 	if [ -f /tmp/wblist.conf ];then
 		#echo_date 创建域名黑/白名单软链接到/tmp/etc/dnsmasq.user/wblist.conf
-		ln -sf /tmp/wblist.conf /tmp/etc/dnsmasq.user/wblist.conf
+		cp -r /tmp/wblist.conf /tmp/etc/dnsmasq.user/wblist.conf
 	fi
 	
 	if [ -f /tmp/sscdn.conf ];then
 		#echo_date 创建cdn加速列表软链接/tmp/etc/dnsmasq.user/cdn.conf
-		ln -sf /tmp/sscdn.conf /tmp/etc/dnsmasq.user/cdn.conf
+		cp -r /tmp/sscdn.conf /tmp/etc/dnsmasq.user/cdn.conf
 	fi
 
 	if [ "$ss_basic_mode" == "1" ];then
 		echo_date 创建gfwlist的软连接到/tmp/etc/dnsmasq.user/文件夹.
-		ln -sf /jffs/softcenter/ss/rules/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
+		cp -r /jffs/softcenter/ss/rules/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
 	elif [ "$ss_basic_mode" == "2" ] || [ "$ss_basic_mode" == "3" ];then
 		if [ -n "$gfw_on" ];then
 			echo_date 创建gfwlist的软连接到/tmp/etc/dnsmasq.user/文件夹.
-			ln -sf /jffs/softcenter/ss/rules/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
+			cp -r /jffs/softcenter/ss/rules/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
 		fi
 	elif [ "$ss_basic_mode" == "6" ];then
 		# 回国模式下默认方案是国内优先，所以gfwlist里的网站不能由127.0.0.1#7913来解析了，应该是国外当地直连
@@ -967,11 +967,12 @@ create_dnsmasq_conf(){
 		echo_date 创建回国模式专用gfwlist的软连接到/tmp/etc/dnsmasq.user/文件夹.
 		[ -z "$ss_direct_user" ] && ss_direct_user="8.8.8.8#53"
 		cat /jffs/softcenter/ss/rules/gfwlist.conf|sed "s/127.0.0.1#7913/$ss_direct_user/g" > /tmp/gfwlist.conf
-		ln -sf /tmp/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
+		cp -r /tmp/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
 	fi
 
 	#echo_date 创建dnsmasq.postconf软连接到/jffs/scripts/文件夹.
 	[ ! -L "/jffs/scripts/dnsmasq.postconf" ] && ln -sf /jffs/softcenter/ss/rules/dnsmasq.postconf /jffs/scripts/dnsmasq.postconf
+	echo "server=127.0.0.1" > /tmp/resolv.dnsmasq
 }
 
 start_haveged(){

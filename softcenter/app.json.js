@@ -11,10 +11,10 @@
             "version": "4.1.7"
         }, 
         {
-            "build_date": "2019-03-14_22:29:02", 
+            "build_date": "2019-06-10_13:30:53", 
             "description": "超强的SSH网页客户端~", 
             "home_url": "Module_shellinabox.asp", 
-            "md5": "e20a0d80d3cf32820bddf8eaf6c1e4b6", 
+            "md5": "963fa2bac51df1069c272b01b27c840b", 
             "name": "shellinabox", 
             "tar_url": "shellinabox/shellinabox.tar.gz", 
             "title": "shellinabox", 
@@ -181,10 +181,10 @@
             "version": "0.1.6"
         }, 
         {
-            "build_date": "2019-06-08_00:51:54", 
+            "build_date": "2019-06-08_22:38:29", 
             "description": "v2ray", 
             "home_url": "Module_v2ray.asp", 
-            "md5": "54a77e066a37413a96e2c6bf05eb9743", 
+            "md5": "2c18603a1a601316581ab3e82c276ab8", 
             "name": "v2ray", 
             "tar_url": "v2ray/v2ray.tar.gz", 
             "title": "v2ray", 
@@ -231,7 +231,7 @@
             "version": "1.0"
         }
     ], 
-    "home_url": "https://raw.githubusercontent.com/paldier/softcenter/master", 
+    "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
     "md5": "5d9cf0d3341932de1d8982ad9e33f55b", 
     "tar_url": "softcenter/softcenter.tar.gz", 
     "version": "1.1.8"
