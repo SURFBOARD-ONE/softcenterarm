@@ -2,7 +2,7 @@
 
 eval `dbus export ss`
 alias echo_date='echo 【$(TZ=UTC-8 date -R +%Y年%m月%d日\ %X)】:'
-main_url="https://raw.githubusercontent.com/paldier/softcenter/master/shadowsocks"
+main_url="https://raw.githubusercontent.com/paldier/softcenterarm/master/shadowsocks"
 backup_url=""
 
 install_ss(){

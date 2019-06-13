@@ -266,7 +266,6 @@ kill_process(){
 		killall v2ray >/dev/null 2>&1
 		kill -9 "$v2ray_process" >/dev/null 2>&1
 	fi
-
 	ssredir=`pidof ss-redir`
 	if [ -n "$ssredir" ];then
 		echo_date 关闭ss-redir进程...
@@ -308,37 +307,31 @@ kill_process(){
 		killall rss-local >/dev/null 2>&1
 		kill -9 "$rsslocal" >/dev/null 2>&1
 	fi
-
 	sstunnel=`pidof ss-tunnel`
 	if [ -n "$sstunnel" ];then
 		echo_date 关闭ss-tunnel进程...
 		killall ss-tunnel >/dev/null 2>&1
 	fi
-
 	rsstunnel=`pidof rss-tunnel`
 	if [ -n "$rsstunnel" ];then
 		echo_date 关闭rss-tunnel进程...
 		killall rss-tunnel >/dev/null 2>&1
 	fi
-
 	chinadns_process=`pidof chinadns`
 	if [ -n "$chinadns_process" ];then
 		echo_date 关闭chinadns2进程...
 		killall chinadns >/dev/null 2>&1
 	fi
-
 	chinadns1_process=`pidof chinadns1`
 	if [ -n "$chinadns1_process" ];then
 		echo_date 关闭chinadns1进程...
 		killall chinadns1 >/dev/null 2>&1
 	fi
-
 	cdns_process=`pidof cdns`
 	if [ -n "$cdns_process" ];then
 		echo_date 关闭cdns进程...
 		killall cdns >/dev/null 2>&1
 	fi
-
 	dns2socks_process=`pidof dns2socks`
 	if [ -n "$dns2socks_process" ];then
 		echo_date 关闭dns2socks进程...
@@ -346,55 +339,46 @@ kill_process(){
 		kill -9 "$dns2socks_process" >/dev/null 2>&1
 
 	fi
-
 	koolgame_process=`pidof koolgame`
 	if [ -n "$koolgame_process" ];then
 		echo_date 关闭koolgame进程...
 		killall koolgame >/dev/null 2>&1
 	fi
-
 	pdu_process=`pidof pdu`
 	if [ -n "$pdu_process" ];then
 		echo_date 关闭pdu进程...
 		kill -9 $pdu >/dev/null 2>&1
 	fi
-
 	client_linux_arm5_process=`pidof client_linux_arm5`
 	if [ -n "$client_linux_arm5_process" ];then
 		echo_date 关闭kcp协议进程...
 		killall client_linux_arm5 >/dev/null 2>&1
 	fi
-
 	haproxy_process=`pidof haproxy`
 	if [ -n "$haproxy_process" ];then
 		echo_date 关闭haproxy进程...
 		killall haproxy >/dev/null 2>&1
 	fi
-
 	speederv1_process=`pidof speederv1`
 	if [ -n "$speederv1_process" ];then
 		echo_date 关闭speederv1进程...
 		killall speederv1 >/dev/null 2>&1
 	fi
-
 	speederv2_process=`pidof speederv2`
 	if [ -n "$speederv2_process" ];then
 		echo_date 关闭speederv2进程...
 		killall speederv2 >/dev/null 2>&1
 	fi
-
 	ud2raw_process=`pidof udp2raw`
 	if [ -n "$ud2raw_process" ];then
 		echo_date 关闭ud2raw进程...
 		killall udp2raw >/dev/null 2>&1
 	fi
-
 	https_dns_proxy_process=`pidof https_dns_proxy`
 	if [ -n "$https_dns_proxy_process" ];then
 		echo_date 关闭https_dns_proxy进程...
 		killall https_dns_proxy >/dev/null 2>&1
 	fi
-
 	haveged_process=`pidof haveged`
 	if [ -n "$haveged_process" ];then
 		echo_date 关闭haveged进程...
@@ -494,7 +478,6 @@ ss_arg(){
 		fi
 	fi
 }
-
 # create shadowsocks config file...
 create_ss_json(){
 	if [ "$ss_basic_type" == "0" ];then
@@ -937,25 +920,25 @@ create_dnsmasq_conf(){
 	#ln_conf
 	if [ -f /tmp/custom.conf ];then
 		#echo_date 创建域自定义dnsmasq配置文件软链接到/tmp/etc/dnsmasq.user/custom.conf
-		cp -r /tmp/custom.conf /tmp/etc/dnsmasq.user/custom.conf
+		ln -sf /tmp/custom.conf /tmp/etc/dnsmasq.user/custom.conf
 	fi
 	if [ -f /tmp/wblist.conf ];then
 		#echo_date 创建域名黑/白名单软链接到/tmp/etc/dnsmasq.user/wblist.conf
-		cp -r /tmp/wblist.conf /tmp/etc/dnsmasq.user/wblist.conf
+		ln -sf /tmp/wblist.conf /tmp/etc/dnsmasq.user/wblist.conf
 	fi
 	
 	if [ -f /tmp/sscdn.conf ];then
 		#echo_date 创建cdn加速列表软链接/tmp/etc/dnsmasq.user/cdn.conf
-		cp -r /tmp/sscdn.conf /tmp/etc/dnsmasq.user/cdn.conf
+		ln -sf /tmp/sscdn.conf /tmp/etc/dnsmasq.user/cdn.conf
 	fi
 
 	if [ "$ss_basic_mode" == "1" ];then
 		echo_date 创建gfwlist的软连接到/tmp/etc/dnsmasq.user/文件夹.
-		cp -r /jffs/softcenter/ss/rules/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
+		ln -sf /jffs/softcenter/ss/rules/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
 	elif [ "$ss_basic_mode" == "2" ] || [ "$ss_basic_mode" == "3" ];then
 		if [ -n "$gfw_on" ];then
 			echo_date 创建gfwlist的软连接到/tmp/etc/dnsmasq.user/文件夹.
-			cp -r /jffs/softcenter/ss/rules/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
+			ln -sf /jffs/softcenter/ss/rules/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
 		fi
 	elif [ "$ss_basic_mode" == "6" ];then
 		# 回国模式下默认方案是国内优先，所以gfwlist里的网站不能由127.0.0.1#7913来解析了，应该是国外当地直连
@@ -967,18 +950,11 @@ create_dnsmasq_conf(){
 		echo_date 创建回国模式专用gfwlist的软连接到/tmp/etc/dnsmasq.user/文件夹.
 		[ -z "$ss_direct_user" ] && ss_direct_user="8.8.8.8#53"
 		cat /jffs/softcenter/ss/rules/gfwlist.conf|sed "s/127.0.0.1#7913/$ss_direct_user/g" > /tmp/gfwlist.conf
-		cp -r /tmp/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
+		ln -sf /tmp/gfwlist.conf /tmp/etc/dnsmasq.user/gfwlist.conf
 	fi
 
 	#echo_date 创建dnsmasq.postconf软连接到/jffs/scripts/文件夹.
 	[ ! -L "/jffs/scripts/dnsmasq.postconf" ] && ln -sf /jffs/softcenter/ss/rules/dnsmasq.postconf /jffs/scripts/dnsmasq.postconf
-	echo "nameserver 127.0.0.1" > /tmp/resolv.conf
-	ISP_DNS1=$(nvram get wan0_dns|sed 's/ /\n/g'|grep -v 0.0.0.0|grep -v 127.0.0.1|sed -n 1p)
-	ISP_DNS2=$(nvram get wan0_dns|sed 's/ /\n/g'|grep -v 0.0.0.0|grep -v 127.0.0.1|sed -n 2p)
-	IFIP_DNS1=`echo $ISP_DNS1|grep -E "([0-9]{1,3}[\.]){3}[0-9]{1,3}|:"`
-	IFIP_DNS2=`echo $ISP_DNS2|grep -E "([0-9]{1,3}[\.]){3}[0-9]{1,3}|:"`
-	echo "nameserver $IFIP_DNS1" >> /tmp/resolv.conf
-	echo "nameserver $IFIP_DNS2" >> /tmp/resolv.conf
 }
 
 start_haveged(){
@@ -989,24 +965,22 @@ start_haveged(){
 auto_start(){
 	[ ! -e "/jffs/softcenter/init.d/S99shadowsocks.sh" ] && cp -rf /jffs/softcenter/ss/ssconfig.sh /jffs/softcenter/init.d/S99shadowsocks.sh
 	[ ! -e "/jffs/softcenter/init.d/N99shadowsocks.sh" ] && cp -rf /jffs/softcenter/ss/ssconfig.sh /jffs/softcenter/init.d/N99shadowsocks.sh
-
 }
-
 write_nat_start(){
-	[ $(nvram get buildno_org) -eq 384 ] || {
-	#382/384所有固件自带nat触发重启，二次触发会导致dnsmasq加载不到服务器列表
+	if [ $(nvram get buildno_org) -eq 380 ]; then
 	echo_date 添加nat-start触发事件...
 	dbus set __event__onnatstart_ssconfig="/jffs/softcenter/ss/ssconfig.sh"
-	}
+	fi
 }
 
 remove_nat_start(){
-	[ -n "`dbus get __event__onnatstart_ssconfig`" ] && {
-		echo_date 删除nat-start触发...
-		dbus remove __event__onnatstart_ssconfig
-	}
+	if [ $(nvram get buildno_org) -eq 380 ]; then
+		[ -n "`dbus get __event__onnatstart_ssconfig`" ] && {
+			echo_date 删除nat-start触发...
+			dbus remove __event__onnatstart_ssconfig
+		}
+	fi
 }
-
 start_kcp(){
 	# Start kcp
 	if [ "$ss_basic_use_kcp" == "1" ];then
@@ -1690,7 +1664,6 @@ kill_cron_job(){
 		sed -i '/ssnodeupdate/d' /var/spool/cron/crontabs/* >/dev/null 2>&1
 	fi
 }
-
 #--------------------------------------nat part begin------------------------------------------------
 load_tproxy(){
 	MODULES="nf_tproxy_core xt_TPROXY xt_socket xt_comment"
@@ -1748,8 +1721,8 @@ flush_nat(){
 	
 	iptables -t mangle -F SHADOWSOCKS >/dev/null 2>&1 && iptables -t mangle -X SHADOWSOCKS >/dev/null 2>&1
 	iptables -t mangle -F SHADOWSOCKS_GAM > /dev/null 2>&1 && iptables -t mangle -X SHADOWSOCKS_GAM > /dev/null 2>&1
-	#iptables -t nat -D OUTPUT -p tcp -m set --match-set router dst -j REDIRECT --to-ports 3333 >/dev/null 2>&1
-	iptables -t nat -D OUTPUT -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-ports 3333 >/dev/null 2>&1
+	iptables -t nat -D OUTPUT -p tcp -m set --match-set router dst -j REDIRECT --to-ports 3333 >/dev/null 2>&1
+	#iptables -t nat -D OUTPUT -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-ports 3333 >/dev/null 2>&1
 	iptables -t nat -F OUTPUT > /dev/null 2>&1
 	iptables -t nat -X SHADOWSOCKS_EXT > /dev/null 2>&1
 	#iptables -t nat -D PREROUTING -p udp -s $(get_lan_cidr) --dport 53 -j DNAT --to $lan_ipaddr >/dev/null 2>&1
@@ -1787,6 +1760,8 @@ create_ipset(){
 	ipset -! create router nethash && ipset flush router
 	ipset -! create chnroute nethash && ipset flush chnroute
 	sed -e "s/^/add chnroute &/g" /jffs/softcenter/ss/rules/chnroute.txt | awk '{print $0} END{print "COMMIT"}' | ipset -R
+	#for router
+	ipset add router 172.217.4.131
 }
 
 add_white_black_ip(){
@@ -2006,8 +1981,8 @@ apply_nat_rules(){
 	lan_acess_control
 	#-----------------------FOR ROUTER---------------------
 	# router itself
-	#[ "$ss_basic_mode" != "6" ] && iptables -t nat -A OUTPUT -p tcp -m set --match-set router dst -j REDIRECT --to-ports 3333
-	[ "$ss_basic_mode" != "6" ] && iptables -t nat -A OUTPUT -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-ports 3333
+	[ "$ss_basic_mode" != "6" ] && iptables -t nat -A OUTPUT -p tcp -m set --match-set router dst -j REDIRECT --to-ports 3333
+	#[ "$ss_basic_mode" != "6" ] && iptables -t nat -A OUTPUT -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-ports 3333
 	iptables -t nat -A OUTPUT -p tcp -m mark --mark "$ip_prefix_hex" -j SHADOWSOCKS_EXT
 	
 	# 把最后剩余流量重定向到相应模式的nat表中对应的主模式的链
@@ -2050,8 +2025,13 @@ chromecast(){
 
 restart_dnsmasq(){
 	# Restart dnsmasq
+	#这里有一个bug，可能是部分机型问题
 	echo_date 重启dnsmasq服务...
-	service restart_dnsmasq >/dev/null 2>&1
+	if [ -z "$(nvram get rc_service)" -a -z "$(nvram get rc_service_pid)" ]; then
+		service restart_dnsmasq >/dev/null 2>&1
+	else
+		delay_exec 30 service restart_dnsmasq &
+	fi
 }
 
 load_module(){
