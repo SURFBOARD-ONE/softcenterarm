@@ -191,6 +191,16 @@
             "version": "4.18.0"
         }, 
         {
+            "build_date": "2019-06-14_13:45:23", 
+            "description": "百度盘", 
+            "home_url": "Module_baidupcs.asp", 
+            "md5": "25e88f82c743b2f9046859c4bd435cbf", 
+            "name": "baidupcs", 
+            "tar_url": "baidupcs/baidupcs.tar.gz", 
+            "title": "百度盘", 
+            "version": "1.0"
+        }, 
+        {
             "description": "从路由器推送状态及通知的工具。", 
             "home_url": "Module_serverchan.asp", 
             "md5": "165028573032833229d935af6f875fe7", 

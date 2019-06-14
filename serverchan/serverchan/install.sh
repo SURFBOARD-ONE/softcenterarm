@@ -6,7 +6,7 @@ VERSION="0.1.11"
 dbus set serverchan_version="${VERSION}"
 mkdir -p /jffs/softcenter/serverchan
 cp -rf /tmp/serverchan/init.d/*  /jffs/softcenter/init.d/
-cp -rf /tmp/serverchan/bin/  /jffs/softcenter/bin/
+cp -rf /tmp/serverchan/bin/* /jffs/softcenter/bin/
 cp -rf /tmp/serverchan/res/* /jffs/softcenter/res/
 cp -rf /tmp/serverchan/scripts/* /jffs/softcenter/scripts/
 cp -rf /tmp/serverchan/webs/*  /jffs/softcenter/webs/
