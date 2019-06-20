@@ -140,7 +140,7 @@ window.open("http://"+window.location.hostname+":5299");
 <span id="desc_note" style="color:#FC0;">提示：</span>
 <ol style="color:#FC0;margin:-5px 0px 3px -18px;*margin-left:18px;">
 <li>如果账号下载太狠被百度拉黑限速了，充个会员或者等几天即可解锁</li>
-<li>设置好的你的路由器上面下载目录，路径默认为 "/tmp/mnt/(你的U盘卷标名称)"</li>
+<li>下载目录留空则使用默认，路径默认为 "/tmp/mnt/(你的U盘卷标名称)"</li>
 </ol>
 </td>
 </tr>
@@ -180,7 +180,7 @@ document.form.baidupcs_enable.value = 0;
 <tr id="baidupcs_savedir_tr">
 <th>设置下载目录</th>
 <td>
-<input name="baidupcs_savedir" style="background-color: #475A5F;color:#FFFFFF;" value="<% dbus_get_def('baidupcs_savedir', ''); %>">
+<input name="baidupcs_savedir" style="background-color: #475A5F;color:#FFFFFF;" value="<% dbus_get_def("baidupcs_savedir", ""); %>">
 </td>
 </tr>
 <tr id="baidupcs_https_tr">

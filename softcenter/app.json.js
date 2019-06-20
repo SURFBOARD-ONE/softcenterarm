@@ -21,6 +21,16 @@
             "version": "2.0"
         }, 
         {
+            "build_date": "2019-06-15_20:42:40", 
+            "description": "去广告，没烦恼", 
+            "home_url": "Module_koolproxyr.asp", 
+            "md5": "68f79f391a97bea6e63b5af59c7204fe", 
+            "name": "koolproxyr", 
+            "tar_url": "koolproxyr/koolproxyr.tar.gz", 
+            "title": "koolproxyr", 
+            "version": "3.8.4"
+        }, 
+        {
             "build_date": "2019-03-11_23:42:42", 
             "description": "Cloudflare解析自动更新IP", 
             "home_url": "Module_cfddns.asp", 
@@ -81,10 +91,10 @@
             "version": "0.3.6"
         }, 
         {
-            "build_date": "2019-05-04_13:36:18", 
+            "build_date": "2019-06-20_13:30:11", 
             "description": "linux下载利器", 
             "home_url": "Module_aria2.asp", 
-            "md5": "2696a353d0920657268629e59601ee71", 
+            "md5": "08bcfbc2d59ba1a33e9585449dc14476", 
             "name": "aria2", 
             "tar_url": "aria2/aria2.tar.gz", 
             "title": "Aria2", 
@@ -139,6 +149,16 @@
             "tar_url": "ddnsto/ddnsto.tar.gz", 
             "title": "DDNSTO远程控制", 
             "version": "2.9.2"
+        }, 
+        {
+            "build_date": "2019-06-15_13:57:55", 
+            "description": "这是一只自动帮你签到的dog", 
+            "home_url": "Module_qiandao.asp", 
+            "md5": "21e5b92c29abfdf7165a3ea9b6e3ac16", 
+            "name": "qiandao", 
+            "tar_url": "qiandao/qiandao.tar.gz", 
+            "title": "签到dog", 
+            "version": "1.4"
         }, 
         {
             "build_date": "2019-03-11_23:46:21", 
