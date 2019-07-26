@@ -6,64 +6,50 @@ alias echo_date='echo $(date +%Y年%m月%d日\ %X):'
 BIN=/jffs/softcenter/bin/easy-explorer
 PID_FILE=/var/run/easy-explorer.pid
 
-fun_ntp_sync(){
-    ntp_server=`nvram get ntp_server0`
-    start_time="`date +%Y%m%d`"
-    ntpclient -h ${ntp_server} -i3 -l -s > /dev/null 2>&1
-    if [ "${start_time}"x = "`date +%Y%m%d`"x ]; then  
-        ntpclient -h ntp1.aliyun.com -i3 -l -s > /dev/null 2>&1 
-    fi
-}
-fun_easyexplorer_start_stop(){
-    if [ "${easyexplorer_enable}"x = "1"x ];then
-        killall easy-explorer
-        start-stop-daemon -S -q -b -m -p ${PID_FILE} -x ${BIN} -- -c /tmp -u ${easyexplorer_token} -share ${easyexplorer_dir}
-    else
-        killall easy-explorer
-    fi
+start_ee(){
+	start-stop-daemon -S -q	-b -m -p $PID_FILE -x $BIN -- -c /tmp -u $easyexplorer_token -share $easyexplorer_dir
+	[ ! -L "/jffs/softcenter/init.d/S99easyexplorer.sh" ] && ln -sf /jffs/softcenter/scripts/easyexplorer_config.sh /jffs/softcenter/init.d/S99easyexplorer.sh
+	[ ! -L "/jffs/softcenter/init.d/N99easyexplorer.sh" ] && ln -sf /jffs/softcenter/scripts/easyexplorer_config.sh /jffs/softcenter/init.d/N99easyexplorer.sh
 }
 
-fun_easyexplorer_iptables(){
-    easyexplorer_iptables_num=$(iptables -nL INPUT | grep -ci "INPUT_EasyExplorer")
-    if [ "${easyexplorer_enable}"x = "1"x ];then
-        if [ "${easyexplorer_iptables_num}"x = "0"x ];then
-            iptables -I INPUT -j INPUT_EasyExplorer
-        fi
-        INPUT_EasyExplorer_num=$(iptables -nL INPUT_EasyExplorer | grep -ic "tcp dpt:2300")
-        if [ "${INPUT_EasyExplorer_num}"x = "0"x ];then
-            iptables -N INPUT_EasyExplorer
-            iptables -t filter -I INPUT_EasyExplorer -p tcp --dport 2300 -j ACCEPT
-        fi
-    else
-        while [[ "${easyexplorer_iptables_num}" != 0 ]]  
-        do
-            iptables -D INPUT -j INPUT_EasyExplorer
-            easyexplorer_iptables_num=$(expr ${easyexplorer_iptables_num} - 1)
-        done
-    fi
+kill_ee(){
+	killall	easy-explorer > /dev/null 2>&1
 }
 
-fun_easyexplorer_nat_start(){
-    if [ "${easyexplorer_enable}"x = "1"x ];then
-        echo_date 添加nat-start触发事件...
-        dbus set __event__onnatstart_easyexplorer="/jffs/softcenter/scripts/easyexplorer_config.sh"
-    else
-        echo_date 删除nat-start触发...
-        dbus remove __event__onnatstart_easyexplorer
-    fi
+load_iptables(){
+	iptables -S | grep "2300" | sed 's/-A/iptables -D/g' > clean.sh && chmod 777 clean.sh && ./clean.sh && rm clean.sh > /dev/null 2>&1
+	iptables -t	filter -I INPUT -p tcp --dport 2300 -j ACCEPT > /dev/null 2>&1
 }
 
-case ${ACTION} in
+del_iptables(){
+	iptables -S | grep "2300" | sed 's/-A/iptables -D/g' > clean.sh && chmod 777 clean.sh && ./clean.sh && rm clean.sh > /dev/null 2>&1
+}
+
+#=========================================================
+case $1 in
 start)
-    fun_ntp_sync
-    fun_easyexplorer_start_stop
-    fun_easyexplorer_iptables
-    fun_easyexplorer_nat_start
-    ;;
+	if [ "$easyexplorer_enable" == "1" ];then
+		logger "[软件中心]: 启动easyexplorer插件！"
+		kill_ee
+		start_ee
+		load_iptables
+	else
+		logger "[软件中心]: easyexplorer插件未开启，不启动！"
+	fi
+	;;
+start_nat)
+	if [ -n "$(pidof easy-explorer)" ]; then
+		load_iptables
+	fi
+	;;
 *)
-    fun_ntp_sync
-    fun_easyexplorer_start_stop
-    fun_easyexplorer_iptables
-    fun_easyexplorer_nat_start
-    ;;
+	if [ "$easyexplorer_enable" == "1" ];then
+		kill_ee
+		start_ee
+		load_iptables
+	else
+		kill_ee
+		del_iptables
+	fi
+	;;
 esac

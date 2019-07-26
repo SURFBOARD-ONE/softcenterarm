@@ -220,6 +220,9 @@ function update_visibility(r) {
 }
 function onSubmitCtrl(o, s) {
   alert_custom();
+	if (!$G("aria2_rpc_secret").value){
+		$G('aria2_rpc_secret').value=randomWord(true, 16, 32);
+	}
   if (validForm()) {
     document.aria2_form.action_mode.value = s;
     document.aria2_form.action_script.value = "aria2_config.sh";

@@ -144,7 +144,7 @@ function pop_help() {
 			content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">\
 				<b>梅林固件 - 科学上网插件 - ' + db_ss["ss_basic_version_local"] + '</b><br><br>\
 				本插件是支持<a target="_blank" href="https://github.com/shadowsocks/shadowsocks-libev" ><u>SS</u></a>、<a target="_blank" href="https://github.com/shadowsocksrr/shadowsocksr-libev"><u>SSR</u></a>、<a target="_blank" href="http://firmware.koolshare.cn/binary/koolgame"><u>KoolGame</u></a>、<a target="_blank" href="https://github.com/v2ray/v2ray-core"><u>V2Ray</u></a>四种客户端的科学上网、游戏加速工具。<br>\
-				本插件仅支持Merlin AM380 2.6.36.4内核的固件，请不要用于其它固件安装。<br>\
+				本插件仅支持Merlin 384 2.6.36.4内核的固件，请不要用于其它固件安装。<br>\
 				使用本插件有任何问题，可以前往<a style="color:#e7bd16" target="_blank" href="https://github.com/paldier/softcenterarm/issues"><u>github的issue页面</u></a>反馈~<br><br>\
 				● SS/SSR一键脚本：<a style="color:#e7bd16" target="_blank" href="https://github.com/onekeyshell/kcptun_for_ss_ssr/tree/master"><u>一键安装KCPTUN for SS/SSR on Linux</u></a><br>\
 				● koolgame一键脚本：<a style="color:#e7bd16" target="_blank" href="https://github.com/clangcn/game-server"><u>一键安装koolgame服务器端脚本，完美支持nat2</u></a><br>\
@@ -438,7 +438,7 @@ function save() {
 	}
 	console.log("post_dbus", post_dbus);
 	post_dbus["action_script"] = "ss_config.sh";
-	post_dbus["action_mode"] = " Refresh ";
+	post_dbus["action_mode"] = "restart";
 	post_dbus["current_page"] = "Main_Ss_Content.asp";
 	push_data(post_dbus);
 }
@@ -1776,7 +1776,7 @@ function restore_ss_conf() {
 	db_ss["ss_basic_action"] = "9";
 	var dbus = {};
 	dbus["action_script"] = "ss_conf_restore.sh";
-	dbus["action_mode"] = " Refresh ";
+	dbus["action_mode"] = "restart";
 	dbus["current_page"] = "Main_Ss_Content.asp";
 	push_data(dbus);
 }
@@ -1786,7 +1786,7 @@ function remove_SS_node() {
 	db_ss["ss_basic_action"] = "10";
 	var dbus = {};
 	dbus["action_script"] = "ss_conf_remove.sh";
-	dbus["action_mode"] = " Refresh ";
+	dbus["action_mode"] = "restart";
 	dbus["current_page"] = "Main_Ss_Content.asp";
 	push_data(dbus);
 }
@@ -1935,7 +1935,7 @@ function updatelist(action) {
 	db_ss["ss_basic_action"] = "8";
 	var dbus = {};
 	dbus["action_script"] = "ss_rule_update.sh";
-	dbus["action_mode"] = " Refresh ";
+	dbus["action_mode"] = "restart";
 	dbus["current_page"] = "Main_Ss_Content.asp";
 	dbus["ss_basic_update_action"] = action;
 	dbus["ss_basic_rule_update"] = E("ss_basic_rule_update").value;
@@ -2056,7 +2056,7 @@ function update_ss() {
 	db_ss["ss_basic_action"] = "7";
 	var dbus = {};
 	dbus["action_script"] = "ss_update.sh";
-	dbus["action_mode"] = " Refresh ";
+	dbus["action_mode"] = "restart";
 	dbus["current_page"] = "Main_Ss_Content.asp";
 	push_data(dbus);
 }
@@ -2752,7 +2752,7 @@ function close_proc_status() {
 
 function now_get_status() {
 	$.ajax({
-		url: 'applydb.cgi?current_page=Main_Ss_Content.asp.asp&next_page=Main_Ss_Content.asp.asp&group_id=&modified=0&action_mode=+Refresh+&action_scriptss_proc_status.sh=&action_wait=&first_time=&preferred_lang=CN&firmver=3.0.0.4',
+		url: 'applydb.cgi?current_page=Main_Ss_Content.asp.asp&next_page=Main_Ss_Content.asp.asp&group_id=&modified=0&action_mode=+Refresh+&action_script=ss_proc_status.sh&action_wait=&first_time=&preferred_lang=CN&firmver=3.0.0.4',
 		dataType: 'html'
 	});
 }
@@ -2812,7 +2812,7 @@ function save_online_nodes(action) {
 	db_ss["ss_basic_action"] = "13";
 	var dbus = {};
 	dbus["action_script"] = "ss_online_update.sh";
-	dbus["action_mode"] = " Refresh ";
+	dbus["action_mode"] = "restart";
 	dbus["current_page"] = "Main_Ss_Content.asp";
 	dbus["ss_online_action"] = action;
 	dbus["ss_online_links"] = Base64.encode(E("ss_online_links").value);
@@ -2832,7 +2832,7 @@ function v2ray_binary_update (){
 	db_ss["ss_basic_action"] = "15";
 	var dbus = {};
 	dbus["action_script"] = "ss_v2ray.sh";
-	dbus["action_mode"] = " Refresh ";
+	dbus["action_mode"] = "restart";
 	dbus["current_page"] = "Main_Ss_Content.asp";
 	require(['/res/layer/layer.js'], function(layer) {
 		layer.confirm('<li>为了避免不必要的问题，请保证路由器和服务器上的v2ray版本一致！</li><br /><li>你确定要更新v2ray二进制吗？</li>', {
@@ -2957,7 +2957,7 @@ function inter_pre_onchange(){
 function set_cron(action) {
 	var dbus = {};
 	dbus["action_script"] = "ss_reboot_job.sh";
-	dbus["action_mode"] = " Refresh ";
+	dbus["action_mode"] = "restart";
 	dbus["current_page"] = "Main_Ss_Content.asp";
 	dbus["ss_basic_reboot_action"] = action;
 	if(action == 1){

@@ -1,268 +1,188 @@
 {
     "apps": [
         {
-            "build_date": "2019-06-13_09:41:04", 
+            "build_date": "2019-07-25_22:24:29", 
             "description": "科学上网", 
             "home_url": "Main_Ss_Content.asp", 
-            "md5": "1c6be57a5e7ddc0e20ef3a6c2e41bd88", 
+            "md5": "c6061c13435ab7c8c5df88357489a3f2", 
             "name": "shadowsocks", 
             "tar_url": "shadowsocks/shadowsocks.tar.gz", 
             "title": "科学上网", 
             "version": "4.1.8"
         }, 
         {
-            "build_date": "2019-06-10_20:57:57", 
+            "build_date": "2019-07-26_10:56:02", 
             "description": "超强的SSH网页客户端~", 
             "home_url": "Module_shellinabox.asp", 
-            "md5": "2e7c17f2aeeaaceb0029377238a03253", 
+            "md5": "3ea8d36d281df8c2358fefcd12b03a7c", 
             "name": "shellinabox", 
             "tar_url": "shellinabox/shellinabox.tar.gz", 
             "title": "shellinabox", 
-            "version": "2.0"
+            "version": "2.1"
         }, 
         {
-            "build_date": "2019-06-15_20:42:40", 
-            "description": "去广告，没烦恼", 
-            "home_url": "Module_koolproxyr.asp", 
-            "md5": "68f79f391a97bea6e63b5af59c7204fe", 
-            "name": "koolproxyr", 
-            "tar_url": "koolproxyr/koolproxyr.tar.gz", 
-            "title": "koolproxyr", 
-            "version": "3.8.4"
-        }, 
-        {
-            "build_date": "2019-03-11_23:42:42", 
+            "build_date": "2019-07-24_10:24:19", 
             "description": "Cloudflare解析自动更新IP", 
             "home_url": "Module_cfddns.asp", 
-            "md5": "a5e1c15d0c2776f5f99371e74a2d7b67", 
+            "md5": "f543fe7bef42ab95746a194dc6e60905", 
             "name": "cfddns", 
             "tar_url": "cfddns/cfddns.tar.gz", 
-            "title": "", 
-            "version": "1.2"
+            "title": "Cloudflare DDNS", 
+            "version": "1.3"
         }, 
         {
-            "build_date": "2019-05-04_19:44:06", 
-            "description": "EasyExplorer 跨设备文件同步+DLNA流媒体", 
+            "build_date": "2019-07-25_11:12:51", 
+            "description": "易有云 （EasyExplorer） 跨平台文件同步，支持双向同步！", 
             "home_url": "Module_easyexplorer.asp", 
-            "md5": "ca14d56df07bb7dd8fe2ed25e9e76011", 
+            "md5": "bb03eef26635ee2ed30f317d0f7c3b4d", 
             "name": "easyexplorer", 
             "tar_url": "easyexplorer/easyexplorer.tar.gz", 
-            "title": "EasyExplorer文件同步", 
-            "version": "1.1"
+            "title": "易有云", 
+            "version": "2.3"
         }, 
         {
-            "build_date": "2019-03-11_23:49:32", 
+            "build_date": "2019-07-25_11:34:28", 
+            "description": "一款傻瓜式的接入局域网软件~", 
+            "home_url": "Module_fcn.asp", 
+            "md5": "6bab928db828c5b130460876f823a8b8", 
+            "name": "fcn", 
+            "tar_url": "fcn/fcn.tar.gz", 
+            "title": "一键接入局域网", 
+            "version": "1.0"
+        }, 
+        {
+            "build_date": "2019-07-26_11:01:53", 
             "description": "老板，来一斤虚拟内存~", 
             "home_url": "Module_swap.asp", 
-            "md5": "0b83f51320c8cf3a34a5a827129a685f", 
+            "md5": "aca46d5ae26e402c5793765adaf75b95", 
             "name": "swap", 
             "tar_url": "swap/swap.tar.gz", 
             "title": "虚拟内存", 
-            "version": "2.2"
+            "version": "2.3"
         }, 
         {
-            "build_date": "2019-05-24_23:13:19", 
-            "description": "天翼云盘，为宽带提速而生！！！", 
-            "home_url": "Module_speedup.asp", 
-            "md5": "2041ddfd0e19cd7a003c436f3620e6d5", 
-            "name": "speedup", 
-            "tar_url": "speedup/speedup.tar.gz", 
-            "title": "天翼云盘", 
-            "version": "2.1.1"
-        }, 
-        {
-            "build_date": "2019-03-11_23:47:48", 
+            "build_date": "2019-07-25_11:44:42", 
             "description": "去广告，没烦恼", 
             "home_url": "Module_koolproxy.asp", 
-            "md5": "60addf184aca63f172ee015d1df4a401", 
+            "md5": "b6d45e26d9a1ead37be8e3f8e2023e04", 
             "name": "koolproxy", 
             "tar_url": "koolproxy/koolproxy.tar.gz", 
             "title": "koolproxy", 
             "version": "3.8.4"
         }, 
         {
-            "build_date": "2019-03-11_23:47:54", 
-            "description": "迅雷快鸟，为上网加速而生~", 
-            "home_url": "Module_kuainiao.asp", 
-            "md5": "806f1a4fc5202d13b46ee7f14241c95b", 
-            "name": "kuainiao", 
-            "tar_url": "kuainiao/kuainiao.tar.gz", 
-            "title": "讯雷快鸟", 
-            "version": "0.3.6"
-        }, 
-        {
-            "build_date": "2019-06-20_13:30:11", 
+            "build_date": "2019-07-24_10:14:26", 
             "description": "linux下载利器", 
             "home_url": "Module_aria2.asp", 
-            "md5": "08bcfbc2d59ba1a33e9585449dc14476", 
+            "md5": "d1c383641c4bffdb70b25311b92903e1", 
             "name": "aria2", 
             "tar_url": "aria2/aria2.tar.gz", 
             "title": "Aria2", 
-            "version": "2.4"
+            "version": "2.5"
         }, 
         {
-            "build_date": "2019-03-11_23:45:56", 
+            "build_date": "2019-07-25_11:38:23", 
             "description": "内网穿透利器，谁用谁知道。", 
             "home_url": "Module_frpc.asp", 
-            "md5": "412bec1254f65f1836c77c471b2184cf", 
+            "md5": "544d8490df8845f0bcf5686bde11b270", 
             "name": "frpc", 
             "tar_url": "frpc/frpc.tar.gz", 
             "title": "frpc穿透", 
-            "version": "2.1.15"
+            "version": "1.6"
         }, 
         {
-            "build_date": "2019-03-11_23:49:26", 
+            "build_date": "2019-07-26_11:00:42", 
             "description": "ss-server", 
             "home_url": "Module_ssserver.asp", 
-            "md5": "04210c91fe8b796b69a60e2c0e183d39", 
+            "md5": "bbd5600c1ac55c0f1587fa294c2f7b7e", 
             "name": "ssserver", 
             "tar_url": "ssserver/ssserver.tar.gz", 
             "title": "ss-server", 
-            "version": "2.1"
+            "version": "2.2"
         }, 
         {
-            "build_date": "2019-03-12_22:22:11", 
+            "build_date": "2019-07-25_11:40:44", 
             "description": "kms", 
             "home_url": "Module_kms.asp", 
-            "md5": "bcb5992db19a5703759a9950f1a86898", 
+            "md5": "41b739346025d408c199d0de3793df68", 
             "name": "kms", 
             "tar_url": "kms/kms.tar.gz", 
-            "title": "kms", 
-            "version": "1.6.1"
+            "title": "系统工具", 
+            "version": "1.4"
         }, 
         {
-            "build_date": "2019-03-11_23:45:21", 
+            "build_date": "2019-07-25_11:34:22", 
+            "description": "迅雷快鸟，为上网加速而生~", 
+            "home_url": "Module_fastd1ck.asp", 
+            "md5": "dd858b291e026b9aca3c27cbea7bc431", 
+            "name": "fastd1ck", 
+            "tar_url": "fastd1ck/fastd1ck.tar.gz", 
+            "title": "讯雷快鸟", 
+            "version": "1.6"
+        }, 
+        {
+            "build_date": "2019-07-24_11:01:49", 
             "description": "dc1服务器", 
             "home_url": "Module_dc1svr.asp", 
-            "md5": "a22fc524a76deec2f0613c34c7c90efa", 
+            "md5": "02b6eba6fd8e00f75d82ebd4b5d0bfe7", 
             "name": "dc1svr", 
             "tar_url": "dc1svr/dc1svr.tar.gz", 
             "title": "dc1服务器", 
             "version": "1.1"
         }, 
         {
-            "build_date": "2019-05-04_19:37:13", 
-            "description": "koolshare小宝开发的基于http2的远程控制，仅支持远程管理路由器+nas+windows远程桌面。", 
-            "home_url": "Module_ddnsto.asp", 
-            "md5": "42c5315d66df32ef03f7bc7a56eb4863", 
-            "name": "ddnsto", 
-            "tar_url": "ddnsto/ddnsto.tar.gz", 
-            "title": "DDNSTO远程控制", 
-            "version": "2.9.2"
-        }, 
-        {
-            "build_date": "2019-06-15_13:57:55", 
-            "description": "这是一只自动帮你签到的dog", 
-            "home_url": "Module_qiandao.asp", 
-            "md5": "21e5b92c29abfdf7165a3ea9b6e3ac16", 
-            "name": "qiandao", 
-            "tar_url": "qiandao/qiandao.tar.gz", 
-            "title": "签到dog", 
-            "version": "1.4"
-        }, 
-        {
-            "build_date": "2019-03-11_23:46:21", 
-            "description": "内网穿透利器，谁用谁知道。", 
-            "home_url": "Module_frps.asp", 
-            "md5": "79d097e862e04fbeb224810c83168501", 
-            "name": "frps", 
-            "tar_url": "frps/frps.tar.gz", 
-            "title": "frps穿透", 
-            "version": "1.4.16"
-        }, 
-        {
-            "build_date": "2019-03-12_20:48:36", 
+            "build_date": "2019-07-24_10:11:18", 
             "description": "阿里云解析自动更新IP", 
             "home_url": "Module_aliddns.asp", 
-            "md5": "ad4f18d332a729e0b6c8bb35debd306c", 
+            "md5": "bca48861fd3752f92a629ab8536ccc47", 
             "name": "aliddns", 
             "tar_url": "aliddns/aliddns.tar.gz", 
             "title": "aliddns", 
             "version": "1.2"
         }, 
         {
-            "build_date": "2019-03-11_23:47:42", 
-            "description": "点对点建立连接,下载更快", 
-            "home_url": "", 
-            "md5": "8be2fd0796217f1404134f4793cbdb94", 
-            "name": "koolnet", 
-            "tar_url": "koolnet/koolnet.tar.gz", 
-            "title": "P2P 穿透", 
-            "version": "0.2"
-        }, 
-        {
-            "build_date": "2019-03-26_11:27:56", 
+            "build_date": "2019-07-24_11:34:18", 
             "description": "使用Dnspod的ddns服务", 
             "home_url": "Module_ddnspod.asp", 
-            "md5": "333cb2798401a77f18428427c9ced25c", 
+            "md5": "ec9946301228b8fdc7221045e503194f", 
             "name": "ddnspod", 
             "tar_url": "ddnspod/ddnspod.tar.gz", 
             "title": "DDnspod", 
-            "version": "0.1.6"
+            "version": "1.3"
         }, 
         {
-            "build_date": "2019-06-08_22:38:29", 
+            "build_date": "2019-07-26_11:15:57", 
             "description": "v2ray", 
             "home_url": "Module_v2ray.asp", 
-            "md5": "2c18603a1a601316581ab3e82c276ab8", 
+            "md5": "563836748d8f54ceb6d7253dfe439381", 
             "name": "v2ray", 
             "tar_url": "v2ray/v2ray.tar.gz", 
             "title": "v2ray", 
-            "version": "4.18.0"
+            "version": "4.18.1"
         }, 
         {
-            "build_date": "2019-06-14_13:45:23", 
+            "build_date": "2019-07-24_10:17:16", 
             "description": "百度盘", 
             "home_url": "Module_baidupcs.asp", 
-            "md5": "25e88f82c743b2f9046859c4bd435cbf", 
+            "md5": "ac63594fffef344871e28284cd7cb9b3", 
             "name": "baidupcs", 
             "tar_url": "baidupcs/baidupcs.tar.gz", 
             "title": "百度盘", 
             "version": "1.0"
         }, 
         {
-            "description": "从路由器推送状态及通知的工具。", 
-            "home_url": "Module_serverchan.asp", 
-            "md5": "165028573032833229d935af6f875fe7", 
-            "module": "serverchan", 
-            "name": "serverchan", 
-            "tar_url": "serverchan/serverchan.tar.gz", 
-            "title": "serverChan微信推送", 
-            "version": "0.1.11"
-        }, 
-        {
-            "build_date": "2019-03-11_23:48:08", 
-            "description": "让局域网控制能简单", 
-            "home_url": "", 
-            "md5": "9dfeb1c2c87563035fcf592d779f0fbd", 
-            "name": "phddns", 
-            "tar_url": "phddns/phddns.tar.gz", 
-            "title": "花生壳内网版", 
-            "version": "0.2"
-        }, 
-        {
-            "build_date": "2019-03-11_23:48:53", 
-            "description": "SVPN让游戏更畅快", 
-            "home_url": "Module_shadowvpn.asp", 
-            "md5": "cfa050bef40ea72e63593c3c23353d62", 
-            "name": "shadowvpn", 
-            "tar_url": "shadowvpn/shadowvpn.tar.gz", 
-            "title": "Shadowvpn", 
-            "version": "3.0"
-        }, 
-        {
-            "build_date": "2019-05-01_10:00:58", 
+            "build_date": "2019-07-24_10:04:58", 
             "description": "广告屏蔽大师", 
             "home_url": "Module_adbyby.asp", 
-            "md5": "b280fcb8c04dcbe91f5d828aace8e6d1", 
+            "md5": "111470e8dc273ba25c7aa261f600ad3e", 
             "name": "adbyby", 
             "tar_url": "adbyby/adbyby.tar.gz", 
             "title": "adbyby", 
-            "version": "1.0"
+            "version": "1.1"
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
-    "md5": "5d9cf0d3341932de1d8982ad9e33f55b", 
+    "md5": "ef7ad36426e321869a0640b057ef6bc3", 
     "tar_url": "softcenter/softcenter.tar.gz", 
-    "version": "1.1.8"
+    "version": "1.2.0"
 }

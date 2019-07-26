@@ -1,8 +1,8 @@
 {
-"version":"2.0",
-"md5":"2e7c17f2aeeaaceb0029377238a03253",
+"version":"2.1",
+"md5":"3ea8d36d281df8c2358fefcd12b03a7c",
 "home_url":"Module_shellinabox.asp",
 "title":"shellinabox",
 "description":"超强的SSH网页客户端~",
-"build_date":"2019-06-10_20:57:57"
+"build_date":"2019-07-26_10:56:02"
 }

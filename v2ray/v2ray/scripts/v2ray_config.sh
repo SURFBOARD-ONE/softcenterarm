@@ -287,8 +287,6 @@ killall -q pdnsd 2>/dev/null
 /jffs/softcenter/scripts/v2ray-rules.sh clean 2>/dev/null
 rm -rf /tmp/etc/dnsmasq.user/gfw_list.conf 2>/dev/null
 rm -rf /tmp/etc/dnsmasq.user/gfw_user.conf 2>/dev/null
-echo "nameserver $IFIP_DNS1" > /tmp/resolv.conf
-echo "nameserver $IFIP_DNS2" >> /tmp/resolv.conf
 service restart_dnsmasq >/dev/null 2>&1
 [ -e "/jffs/softcenter/init.d/S99v2ray.sh" ] && rm -rf /jffs/softcenter/init.d/S99v2ray.sh
 }
@@ -334,8 +332,12 @@ case $ACTION in
 stop)
 	stop_v2ray
 	;;
+start_nat)
+	if [ -n "$(pidof v2ray)" ];then
+		restart_v2ray
+	fi
+	;;
 *)
 	restart_v2ray
 	;;
 esac
-
