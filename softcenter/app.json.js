@@ -151,6 +151,16 @@
             "version": "1.2"
         }, 
         {
+            "build_date": "2019-08-12_22:07:34", 
+            "description": "网易uu", 
+            "home_url": "Module_uu.asp", 
+            "md5": "4d28dd18649b2e46daeefdd6b78edb1e", 
+            "name": "uu", 
+            "tar_url": "uu/uu.tar.gz", 
+            "title": "网易uu", 
+            "version": "1.2.12"
+        }, 
+        {
             "build_date": "2019-08-12_17:46:31", 
             "description": "VPN全家桶, ver 4.29 build 9680", 
             "home_url": "Module_softether.asp", 
