@@ -101,10 +101,10 @@
             "version": "2.3"
         }, 
         {
-            "build_date": "2019-07-26_12:05:18", 
+            "build_date": "2019-08-12_17:46:09", 
             "description": "kms", 
             "home_url": "Module_kms.asp", 
-            "md5": "dda5dc2253d507c918e0237c7e393968", 
+            "md5": "13b5c311eb7798a9f0b93c890ea03602", 
             "name": "kms", 
             "tar_url": "kms/kms.tar.gz", 
             "title": "系统工具", 
@@ -131,6 +131,16 @@
             "version": "1.1"
         }, 
         {
+            "build_date": "2019-08-12_17:46:21", 
+            "description": "这是一只自动帮你签到的dog", 
+            "home_url": "Module_qiandao.asp", 
+            "md5": "542a80bf5c0fb41808a2da43a1425fd2", 
+            "name": "qiandao", 
+            "tar_url": "qiandao/qiandao.tar.gz", 
+            "title": "签到dog", 
+            "version": "1.5"
+        }, 
+        {
             "build_date": "2019-07-24_10:11:18", 
             "description": "阿里云解析自动更新IP", 
             "home_url": "Module_aliddns.asp", 
@@ -141,20 +151,20 @@
             "version": "1.2"
         }, 
         {
-            "build_date": "2019-08-12_16:22:00", 
+            "build_date": "2019-08-12_17:46:31", 
             "description": "VPN全家桶, ver 4.29 build 9680", 
             "home_url": "Module_softether.asp", 
-            "md5": "c82559e3d1566440bc2d582f294cafba", 
+            "md5": "d830839b1d600a1932b97e02eb5d2031", 
             "name": "softether", 
             "tar_url": "softether/softether.tar.gz", 
             "title": "SoftEther_VPN_Server", 
             "version": "1.9"
         }, 
         {
-            "build_date": "2019-08-12_15:58:14", 
+            "build_date": "2019-08-12_17:46:15", 
             "description": "pppoe单线多拨，带宽提升神器！", 
             "home_url": "Module_mdial.asp", 
-            "md5": "e30c16154c3e872f75a1343dafd6b9eb", 
+            "md5": "67a3ff58d55b12f42b56afdf92ea45f5", 
             "name": "mdial", 
             "tar_url": "mdial/mdial.tar.gz", 
             "title": "单线多拨", 
@@ -191,6 +201,16 @@
             "version": "1.0"
         }, 
         {
+            "build_date": "2019-08-12_17:46:25", 
+            "description": "从路由器推送状态及通知的工具", 
+            "home_url": "Module_serverchan.asp", 
+            "md5": "32d53309f4aae90e3d5013b269d06309", 
+            "name": "serverchan", 
+            "tar_url": "serverchan/serverchan.tar.gz", 
+            "title": "ServerChan微信推送", 
+            "version": "1.0"
+        }, 
+        {
             "build_date": "2019-07-24_10:04:58", 
             "description": "广告屏蔽大师", 
             "home_url": "Module_adbyby.asp", 
@@ -202,7 +222,7 @@
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
-    "md5": "ef7ad36426e321869a0640b057ef6bc3", 
+    "md5": "2110b2a793e8f58d53d573a9fb68c0c1", 
     "tar_url": "softcenter/softcenter.tar.gz", 
     "version": "1.2.0"
 }
