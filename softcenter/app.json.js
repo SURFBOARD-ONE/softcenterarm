@@ -91,20 +91,20 @@
             "version": "1.6"
         }, 
         {
-            "build_date": "2019-07-26_11:00:42", 
+            "build_date": "2019-08-11_21:11:38", 
             "description": "ss-server", 
             "home_url": "Module_ssserver.asp", 
-            "md5": "bbd5600c1ac55c0f1587fa294c2f7b7e", 
+            "md5": "8fd5f41896d0e797fccff9886dd819e2", 
             "name": "ssserver", 
             "tar_url": "ssserver/ssserver.tar.gz", 
             "title": "ss-server", 
-            "version": "2.2"
+            "version": "2.3"
         }, 
         {
-            "build_date": "2019-07-25_11:40:44", 
+            "build_date": "2019-07-26_12:05:18", 
             "description": "kms", 
             "home_url": "Module_kms.asp", 
-            "md5": "41b739346025d408c199d0de3793df68", 
+            "md5": "dda5dc2253d507c918e0237c7e393968", 
             "name": "kms", 
             "tar_url": "kms/kms.tar.gz", 
             "title": "系统工具", 
@@ -139,6 +139,26 @@
             "tar_url": "aliddns/aliddns.tar.gz", 
             "title": "aliddns", 
             "version": "1.2"
+        }, 
+        {
+            "build_date": "2019-08-12_16:22:00", 
+            "description": "VPN全家桶, ver 4.29 build 9680", 
+            "home_url": "Module_softether.asp", 
+            "md5": "c82559e3d1566440bc2d582f294cafba", 
+            "name": "softether", 
+            "tar_url": "softether/softether.tar.gz", 
+            "title": "SoftEther_VPN_Server", 
+            "version": "1.9"
+        }, 
+        {
+            "build_date": "2019-08-12_15:58:14", 
+            "description": "pppoe单线多拨，带宽提升神器！", 
+            "home_url": "Module_mdial.asp", 
+            "md5": "e30c16154c3e872f75a1343dafd6b9eb", 
+            "name": "mdial", 
+            "tar_url": "mdial/mdial.tar.gz", 
+            "title": "单线多拨", 
+            "version": "1.3"
         }, 
         {
             "build_date": "2019-07-24_11:34:18", 
