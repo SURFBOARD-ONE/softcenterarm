@@ -12,6 +12,7 @@ start()
 	else
 		[ ! -L "/jffs/softcenter/init.d/S97uu.sh" ] && ln -sf /jffs/softcenter/scripts/uu_config.sh /jffs/softcenter/init.d/S97uu.sh
 	fi
+	[ -f "/tmp/uu/uu.conf" ] && dbus set uu_version=`cat /tmp/uu/uu.conf |sed -n '2p' |cut -c10-15`
 }
 
 stop()

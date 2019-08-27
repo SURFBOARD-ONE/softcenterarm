@@ -356,7 +356,6 @@ stop)
 	set_lock
 	echo_date ================================ 关闭 ===============================
 	remove_reboot_job
-	add_ipset_conf && restart_dnsmasq
 	flush_nat
 	stop_koolproxy
 	remove_ipset_conf && restart_dnsmasq

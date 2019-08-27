@@ -42,8 +42,8 @@ function get_dbus_data() {
 	});
 }
 function menu_hook(title, tab) {
-	tabtitle[tabtitle.length - 1] = new Array("", "Softether VPN server");
-	tablink[tabtitle.length - 1] = new Array("", "Module_softether.asp");
+	tabtitle[tabtitle.length - 1] = new Array("", "软件中心", "离线安装", "Softether VPN server");
+	tablink[tabtitle.length - 1] = new Array("", "Main_Soft_center.asp", "Main_Soft_setting.asp", "Module_softether.asp");
 }
 function onSubmitCtrl() {
 	showLoading(3);

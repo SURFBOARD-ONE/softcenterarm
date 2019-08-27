@@ -141,14 +141,14 @@
             "version": "1.5"
         }, 
         {
-            "build_date": "2019-07-24_10:11:18", 
-            "description": "阿里云解析自动更新IP", 
+            "build_date": "2019-08-27_19:45:19", 
+            "description": "aliddns", 
             "home_url": "Module_aliddns.asp", 
-            "md5": "bca48861fd3752f92a629ab8536ccc47", 
+            "md5": "0aa254f2190aab7f489856fc70d2291b", 
             "name": "aliddns", 
             "tar_url": "aliddns/aliddns.tar.gz", 
-            "title": "aliddns", 
-            "version": "1.2"
+            "title": "阿里DDNS", 
+            "version": "1.3"
         }, 
         {
             "build_date": "2019-08-12_22:07:34", 
@@ -232,7 +232,7 @@
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
-    "md5": "2110b2a793e8f58d53d573a9fb68c0c1", 
+    "md5": "6cfbd92533bb26b5009ba9177720c314", 
     "tar_url": "softcenter/softcenter.tar.gz", 
     "version": "1.2.0"
 }
