@@ -171,14 +171,14 @@
             "version": "1.9"
         }, 
         {
-            "build_date": "2019-08-12_17:46:15", 
+            "build_date": "2019-08-28_19:57:57", 
             "description": "pppoe单线多拨，带宽提升神器！", 
             "home_url": "Module_mdial.asp", 
-            "md5": "67a3ff58d55b12f42b56afdf92ea45f5", 
+            "md5": "ed14dff18d01dcfad35b56eb88eacf4b", 
             "name": "mdial", 
             "tar_url": "mdial/mdial.tar.gz", 
             "title": "单线多拨", 
-            "version": "1.3"
+            "version": "1.4"
         }, 
         {
             "build_date": "2019-07-24_11:34:18", 
