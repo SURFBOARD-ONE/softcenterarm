@@ -5,18 +5,6 @@ alias echo_date='echo 【$(TZ=UTC-8 date -R +%Y年%m月%d日\ %X)】:'
 mkdir -p /jffs/softcenter/ss
 mkdir -p /tmp/ss_backup
 
-# 判断路由架构和平台
-case $(uname -m) in
-	armv7l)
-		echo_date 固件平台【merlin armv7l】符合安装要求，开始安装插件！
-	;;
-	*)
-		echo_date 本插件适用于merlin armv7l固件平台，你的平台"$(uname -m)"不能安装！！！
-		echo_date 退出安装！
-		exit 1
-	;;
-esac
-
 if [ "$ss_basic_enable" == "1" ];then
 	echo_date 先关闭科学上网插件，保证文件更新成功!
 	sh /jffs/softcenter/ss/ssconfig.sh stop
@@ -38,6 +26,7 @@ rm -rf /jffs/softcenter/bin/rss-redir
 rm -rf /jffs/softcenter/bin/rss-tunnel
 rm -rf /jffs/softcenter/bin/rss-local
 rm -rf /jffs/softcenter/bin/obfs-local
+rm -rf /jffs/softcenter/bin/v2ray-plugin
 rm -rf /jffs/softcenter/bin/koolgame
 rm -rf /jffs/softcenter/bin/pdu
 rm -rf /jffs/softcenter/bin/haproxy
@@ -119,7 +108,7 @@ echo_date 创建一些二进制文件的软链接！
 echo_date 设置一些默认值
 [ -z "$ss_dns_china" ] && dbus set ss_dns_china=11
 [ -z "$ss_dns_foreign" ] && dbus set ss_dns_foreign=1
-[ -z "$ss_basic_ss_obfs" ] && dbus set ss_basic_ss_obfs=0
+[ -z "$ss_basic_ss_v2ray_plugin" ] && dbus set ss_basic_ss_v2ray_plugin=0
 [ -z "$ss_acl_default_mode" ] && [ -n "$ss_basic_mode" ] && dbus set ss_acl_default_mode="$ss_basic_mode"
 [ -z "$ss_acl_default_mode" ] && [ -z "$ss_basic_mode" ] && dbus set ss_acl_default_mode=1
 [ -z "$ss_acl_default_port" ] && dbus set ss_acl_default_port=all
@@ -138,8 +127,8 @@ dbus set softcenter_module_shadowsocks_description="科学上网"
 dbus set softcenter_module_shadowsocks_home_url="Main_Ss_Content.asp"
 
 # 设置v2ray 版本号
-dbus set ss_basic_v2ray_version="v4.18.0"
-dbus set ss_basic_v2ray_date="20190301"
+dbus set ss_basic_v2ray_version="4.20.0"
+dbus set ss_basic_v2ray_date="20190712"
 
 echo_date 一点点清理工作...
 rm -rf /tmp/shadowsocks* >/dev/null 2>&1
@@ -152,3 +141,4 @@ if [ "$ss_basic_enable" == "1" ];then
 	sh /jffs/softcenter/ss/ssconfig.sh restart
 fi
 echo_date 更新完毕，请等待网页自动刷新！
+
