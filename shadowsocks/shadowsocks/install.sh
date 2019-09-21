@@ -5,6 +5,46 @@ alias echo_date='echo 【$(TZ=UTC-8 date -R +%Y年%m月%d日\ %X)】:'
 mkdir -p /jffs/softcenter/ss
 mkdir -p /tmp/ss_backup
 
+firmware_version=`nvram get extendno|cut -d "_" -f2|cut -d "-" -f1|cut -c2-5`
+productid=`nvram get productid`
+if [ "$productid" == "BLUECAVE" ];then
+	if [ -n "nvram get modelname" ];then
+	firmware_ver=`nvram get extendno|grep B`
+	if [ -n "firmware_ver" ];then
+		firmware_check=22.1
+	else
+		firmware_check=7.1
+	fi
+	else
+		firmware_check=16.1
+	fi
+elif [ "$productid" == "RT-AC68U" ];then
+firmware_check=4.2
+elif [ "$productid" == "RT-AC3200" ];then
+firmware_check=4.2
+elif [ "$productid" == "RT-AC3100" ];then
+firmware_check=4.1
+elif [ "$productid" == "GT-AC5300" ];then
+firmware_check=1
+elif [ "$productid" == "GT-AC2900" ];then
+firmware_check=1
+elif [ "$productid" == "RT-AC86U" ];then
+firmware_check=1
+elif [ "$productid" == "RT-AC88U" ];then
+firmware_check=1
+elif [ "$productid" == "RT-ACRH17" ];then
+firmware_check=1
+else
+firmware_check=100
+fi
+firmware_comp=`/jffs/softcenter/bin/versioncmp $firmware_version $firmware_check`
+if [ "$firmware_comp" == "1" ];then
+	echo_date 固件版本过低，无法安装
+	exit 1
+fi
+
+
+
 if [ "$ss_basic_enable" == "1" ];then
 	echo_date 先关闭科学上网插件，保证文件更新成功!
 	sh /jffs/softcenter/ss/ssconfig.sh stop

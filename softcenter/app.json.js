@@ -11,10 +11,10 @@
             "version": "1.0.0"
         }, 
         {
-            "build_date": "2019-09-20_22:35:09", 
+            "build_date": "2019-09-21_00:15:03", 
             "description": "科学上网", 
             "home_url": "Main_Ss_Content.asp", 
-            "md5": "940ac48b8938db0e4bb5028610548a2b", 
+            "md5": "b59729f5c6ecbeef4b8ceacee8cc4983", 
             "name": "shadowsocks", 
             "tar_url": "shadowsocks/shadowsocks.tar.gz", 
             "title": "科学上网", 
@@ -91,14 +91,14 @@
             "version": "1.6"
         }, 
         {
-            "build_date": "2019-08-11_21:11:38", 
+            "build_date": "2019-09-21_19:37:25", 
             "description": "ss-server", 
             "home_url": "Module_ssserver.asp", 
-            "md5": "8fd5f41896d0e797fccff9886dd819e2", 
+            "md5": "5bce99e47b75c4365b3311cba19fcfd2", 
             "name": "ssserver", 
             "tar_url": "ssserver/ssserver.tar.gz", 
             "title": "ss-server", 
-            "version": "2.3"
+            "version": "2.4"
         }, 
         {
             "build_date": "2019-08-12_17:46:09", 
