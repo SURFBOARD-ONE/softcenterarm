@@ -1,20 +1,20 @@
 {
     "apps": [
         {
-            "build_date": "2019-09-20_19:09:17", 
+            "build_date": "2019-09-24_10:39:50", 
             "description": "KPR更多规则更舒服！", 
             "home_url": "Module_koolproxyR.asp", 
-            "md5": "f6c214977b25ebdc3031a767570e7e90", 
+            "md5": "b2cc67db6b7bd53289e2464f6f0a3ada", 
             "name": "koolproxyR", 
             "tar_url": "koolproxyR/koolproxyR.tar.gz", 
             "title": "koolproxyR", 
             "version": "1.0.0"
         }, 
         {
-            "build_date": "2019-09-21_00:15:03", 
+            "build_date": "2019-09-23_21:13:00", 
             "description": "科学上网", 
             "home_url": "Main_Ss_Content.asp", 
-            "md5": "b59729f5c6ecbeef4b8ceacee8cc4983", 
+            "md5": "8a06dfa1fa40c19198ca3aff1eeeac74", 
             "name": "shadowsocks", 
             "tar_url": "shadowsocks/shadowsocks.tar.gz", 
             "title": "科学上网", 

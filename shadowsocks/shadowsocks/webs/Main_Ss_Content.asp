@@ -1001,7 +1001,7 @@ function loadAllConfigs() {
 function updateSs_node_listView() {
 	$.ajax({
 		url: '/dbconf?p=ss',
-		dataType: 'html',
+		dataType: 'script',
 		error: function(xhr) {},
 		success: function(response) {
 			$.globalEval(response);
@@ -1327,7 +1327,7 @@ function add_ss_node_conf(flag) { //点击添加按钮动作
 function refresh_table() {
 	$.ajax({
 		url: '/dbconf?p=ss',
-		dataType: 'html',
+		dataType: 'script',
 		error: function(xhr) {},
 		success: function(response) {
 			$.globalEval(response);
@@ -2081,22 +2081,11 @@ function get_ss_status_data() {
 	}
 }
 
-function get_udp_status() {
-	$.ajax({
-		url: 'applydb.cgi?current_page=Main_Ss_Content.asp.asp&next_page=Main_Ss_Content.asp.asp&group_id=&modified=0&action_mode=+Refresh+&action_script=ss_udp_status.sh&action_wait=&first_time=&preferred_lang=CN&firmver=3.0.0.4',
-		dataType: 'html',
-		success: function (response) {
-			setTimeout("write_udp_status();", 1000);
-			return true;
-		}
-	});
-}
-
 var noChange4 = 0;
 function write_udp_status() {
 	E("udp_status").value = "获取中......"
 	$.ajax({
-		url: '/res/ss_udp_status.htm',
+		url: '/logreaddb.cgi?p=ss_udp_status.log&script=ss_udp_status.sh',
 		dataType: 'html',
 		error: function(xhr) {
 			setTimeout("write_udp_status();", 500);
@@ -2291,7 +2280,7 @@ function toggle_func() {
 			E("apply_button").style.display = "";
 			ss_node_info_return();
 			update_visibility();
-			get_udp_status();
+			write_udp_status();
 		});
 	$(".show-btn4").click(
 		//rule manage
@@ -2602,7 +2591,7 @@ function delTr(o) {
 function refresh_acl_table(q) {
 	$.ajax({
 		url: '/dbconf?p=ss',
-		dataType: 'html',
+		dataType: 'script',
 		error: function(xhr) {},
 		success: function(response) {
 			$.globalEval(response);
@@ -2812,7 +2801,6 @@ function hideClients_Block() {
 
 function get_proc_status() {
 	noChange3 = 0;
-	now_get_status();
 	setTimeout("write_proc_status();", 500);
 	$("#detail_status").fadeIn(200);
 }
@@ -2821,18 +2809,11 @@ function close_proc_status() {
 	$("#detail_status").fadeOut(200);
 }
 
-function now_get_status() {
-	$.ajax({
-		url: 'applydb.cgi?current_page=Main_Ss_Content.asp.asp&next_page=Main_Ss_Content.asp.asp&group_id=&modified=0&action_mode=+Refresh+&action_script=ss_proc_status.sh&action_wait=&first_time=&preferred_lang=CN&firmver=3.0.0.4',
-		dataType: 'html'
-	});
-}
-
 var noChange3 = 0;
 function write_proc_status() {
 	E("proc_status").value = ""
 	$.ajax({
-		url: '/res/ss_proc_status.htm',
+		url: '/logreaddb.cgi?p=ss_proc_status.log&script=ss_proc_status.sh',
 		dataType: 'html',
 		error: function(xhr) {
 			setTimeout("write_proc_status();", 1400);
