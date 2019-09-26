@@ -87,7 +87,6 @@ rm -rf /jffs/softcenter/bin/jitterentropy-rngd
 rm -rf /jffs/softcenter/bin/haveged
 rm -rf /jffs/softcenter/bin/https_dns_proxy
 rm -rf /jffs/softcenter/bin/dnsmassq
-rm -rf /jffs/softcenter/res/layer
 rm -rf /jffs/softcenter/res/shadowsocks.css
 rm -rf /jffs/softcenter/res/icon-shadowsocks.png
 rm -rf /jffs/softcenter/res/ss-menu.js
