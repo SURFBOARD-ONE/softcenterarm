@@ -1,8 +1,8 @@
 {
-"version":"4.18.1",
-"md5":"563836748d8f54ceb6d7253dfe439381",
+"version":"4.18.2",
+"md5":"fc0cba943a7eb76cd3f692ddaa49f059",
 "home_url":"Module_v2ray.asp",
 "title":"v2ray",
 "description":"v2ray",
-"build_date":"2019-07-26_11:15:57"
+"build_date":"2019-09-26_21:31:33"
 }

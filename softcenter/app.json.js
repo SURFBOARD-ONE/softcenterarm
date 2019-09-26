@@ -1,20 +1,20 @@
 {
     "apps": [
         {
-            "build_date": "2019-09-24_10:39:50", 
+            "build_date": "2019-09-26_21:17:39", 
             "description": "KPR更多规则更舒服！", 
             "home_url": "Module_koolproxyR.asp", 
-            "md5": "b2cc67db6b7bd53289e2464f6f0a3ada", 
+            "md5": "c99f19408adfccf41fdd71213797d92e", 
             "name": "koolproxyR", 
             "tar_url": "koolproxyR/koolproxyR.tar.gz", 
             "title": "koolproxyR", 
             "version": "1.0.0"
         }, 
         {
-            "build_date": "2019-09-26_10:21:34", 
+            "build_date": "2019-09-26_21:18:06", 
             "description": "科学上网", 
             "home_url": "Main_Ss_Content.asp", 
-            "md5": "d728c4be77705f0d781244eaa6bb4f05", 
+            "md5": "737da331eeab6b8a00452600ad16cd82", 
             "name": "shadowsocks", 
             "tar_url": "shadowsocks/shadowsocks.tar.gz", 
             "title": "科学上网", 
@@ -191,24 +191,24 @@
             "version": "1.3"
         }, 
         {
-            "build_date": "2019-07-26_11:15:57", 
+            "build_date": "2019-09-26_21:31:33", 
             "description": "v2ray", 
             "home_url": "Module_v2ray.asp", 
-            "md5": "563836748d8f54ceb6d7253dfe439381", 
+            "md5": "fc0cba943a7eb76cd3f692ddaa49f059", 
             "name": "v2ray", 
             "tar_url": "v2ray/v2ray.tar.gz", 
             "title": "v2ray", 
-            "version": "4.18.1"
+            "version": "4.18.2"
         }, 
         {
-            "build_date": "2019-07-24_10:17:16", 
+            "build_date": "2019-09-26_21:17:15", 
             "description": "百度盘", 
             "home_url": "Module_baidupcs.asp", 
-            "md5": "ac63594fffef344871e28284cd7cb9b3", 
+            "md5": "9b0fe0c76fce4055f4af9bc1a1f4bab5", 
             "name": "baidupcs", 
             "tar_url": "baidupcs/baidupcs.tar.gz", 
             "title": "百度盘", 
-            "version": "1.0"
+            "version": "1.1"
         }, 
         {
             "build_date": "2019-09-12_01:46:30", 
@@ -232,7 +232,7 @@
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
-    "md5": "6cfbd92533bb26b5009ba9177720c314", 
+    "md5": "6ea414aaa64c0d44f7813be0907740f1", 
     "tar_url": "softcenter/softcenter.tar.gz", 
-    "version": "1.2.0"
+    "version": "1.2.1"
 }
