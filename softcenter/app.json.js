@@ -71,6 +71,16 @@
             "version": "2.3"
         }, 
         {
+            "build_date": "2019-09-26_21:17:32", 
+            "description": "去广告，没烦恼", 
+            "home_url": "Module_koolproxy.asp", 
+            "md5": "732f3fdf42127aee439075486d353c77", 
+            "name": "koolproxy", 
+            "tar_url": "koolproxy/koolproxy.tar.gz", 
+            "title": "koolproxy", 
+            "version": "3.8.4.1"
+        }, 
+        {
             "build_date": "2019-07-24_10:14:26", 
             "description": "linux下载利器", 
             "home_url": "Module_aria2.asp", 
@@ -81,14 +91,14 @@
             "version": "2.5"
         }, 
         {
-            "build_date": "2019-07-25_11:38:23", 
+            "build_date": "2019-10-04_22:28:06", 
             "description": "内网穿透利器，谁用谁知道。", 
             "home_url": "Module_frpc.asp", 
-            "md5": "544d8490df8845f0bcf5686bde11b270", 
+            "md5": "c54f54c3da24b4614912e033194e66b5", 
             "name": "frpc", 
             "tar_url": "frpc/frpc.tar.gz", 
             "title": "frpc穿透", 
-            "version": "1.6"
+            "version": "1.7"
         }, 
         {
             "build_date": "2019-09-21_19:37:25", 
