@@ -1,20 +1,20 @@
 {
     "apps": [
         {
-            "build_date": "2019-10-06_10:12:38", 
+            "build_date": "2019-11-01_10:41:08", 
             "description": "KPR更多规则更舒服！", 
             "home_url": "Module_koolproxyR.asp", 
-            "md5": "26d6e595596a58a7664049e3c014b87e", 
+            "md5": "84a6f9c65323bfffbecd9fd099063876", 
             "name": "koolproxyR", 
             "tar_url": "koolproxyR/koolproxyR.tar.gz", 
             "title": "koolproxyR", 
             "version": "1.0.1"
         }, 
         {
-            "build_date": "2019-10-06_10:19:14", 
+            "build_date": "2019-11-01_10:41:25", 
             "description": "科学上网", 
             "home_url": "Main_Ss_Content.asp", 
-            "md5": "202a106608e55fbcbe41424d6f316914", 
+            "md5": "ea62827d9217c19e69f0a911dcb0e3c3", 
             "name": "shadowsocks", 
             "tar_url": "shadowsocks/shadowsocks.tar.gz", 
             "title": "科学上网", 
@@ -31,20 +31,20 @@
             "version": "2.1"
         }, 
         {
-            "build_date": "2019-07-24_10:24:19", 
+            "build_date": "2019-11-01_10:40:47", 
             "description": "Cloudflare解析自动更新IP", 
             "home_url": "Module_cfddns.asp", 
-            "md5": "f543fe7bef42ab95746a194dc6e60905", 
+            "md5": "e1fe2321d7e68a838defe28d8615cc76", 
             "name": "cfddns", 
             "tar_url": "cfddns/cfddns.tar.gz", 
             "title": "Cloudflare DDNS", 
             "version": "1.3"
         }, 
         {
-            "build_date": "2019-07-25_11:12:51", 
+            "build_date": "2019-11-01_10:40:56", 
             "description": "易有云 （EasyExplorer） 跨平台文件同步，支持双向同步！", 
             "home_url": "Module_easyexplorer.asp", 
-            "md5": "bb03eef26635ee2ed30f317d0f7c3b4d", 
+            "md5": "2048161cc112089403f45bce105d51dd", 
             "name": "easyexplorer", 
             "tar_url": "easyexplorer/easyexplorer.tar.gz", 
             "title": "易有云", 
@@ -71,30 +71,40 @@
             "version": "2.3"
         }, 
         {
-            "build_date": "2019-10-06_10:32:56", 
+            "build_date": "2019-10-20_11:02:32", 
+            "description": "解决重启Bug", 
+            "home_url": "Module_reboothelper.asp", 
+            "md5": "688696effff2dbdd79167f1a70d93936", 
+            "name": "reboothelper", 
+            "tar_url": "reboothelper/reboothelper.tar.gz", 
+            "title": "重启助手", 
+            "version": "0.3"
+        }, 
+        {
+            "build_date": "2019-11-01_10:41:03", 
             "description": "去广告，没烦恼", 
             "home_url": "Module_koolproxy.asp", 
-            "md5": "76bd77fff9ec48920e44564f33b21bb8", 
+            "md5": "6cf7bc9d52258851f155944e6206c475", 
             "name": "koolproxy", 
             "tar_url": "koolproxy/koolproxy.tar.gz", 
             "title": "koolproxy", 
             "version": "3.8.4.2"
         }, 
         {
-            "build_date": "2019-07-24_10:14:26", 
+            "build_date": "2019-11-01_10:40:40", 
             "description": "linux下载利器", 
             "home_url": "Module_aria2.asp", 
-            "md5": "d1c383641c4bffdb70b25311b92903e1", 
+            "md5": "a3f4e3312354c7c0fde4faf823cfeb93", 
             "name": "aria2", 
             "tar_url": "aria2/aria2.tar.gz", 
             "title": "Aria2", 
-            "version": "2.5"
+            "version": "2.6"
         }, 
         {
-            "build_date": "2019-10-09_00:04:21", 
+            "build_date": "2019-11-01_10:45:25", 
             "description": "内网穿透利器，谁用谁知道。", 
             "home_url": "Module_frpc.asp", 
-            "md5": "39476db21eef075c057e56ca473bad4d", 
+            "md5": "bcac6215ee36001f6e6af045ee5c4573", 
             "name": "frpc", 
             "tar_url": "frpc/frpc.tar.gz", 
             "title": "frpc穿透", 
@@ -191,6 +201,16 @@
             "version": "1.4"
         }, 
         {
+            "build_date": "2019-11-01_10:40:34", 
+            "description": "自动部署SSL证书", 
+            "home_url": "Module_acme.asp", 
+            "md5": "18a44d7e3e57e76a24f249431685dbf0", 
+            "name": "acme", 
+            "tar_url": "acme/acme.tar.gz", 
+            "title": "Let's Encrypt", 
+            "version": "3.0"
+        }, 
+        {
             "build_date": "2019-07-24_11:34:18", 
             "description": "使用Dnspod的ddns服务", 
             "home_url": "Module_ddnspod.asp", 
@@ -242,7 +262,7 @@
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
-    "md5": "64126fe453991c6c2d3a3f1a3478de94", 
+    "md5": "a4ab9ba1859f316d9d9f8f1c35453617", 
     "tar_url": "softcenter/softcenter.tar.gz", 
-    "version": "1.2.1"
+    "version": "1.2.2"
 }
