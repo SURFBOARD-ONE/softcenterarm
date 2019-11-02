@@ -151,6 +151,16 @@
             "version": "1.1"
         }, 
         {
+            "build_date": "2019-11-02_13:18:39", 
+            "description": "自己的私有云", 
+            "home_url": "Module_verysync.asp", 
+            "md5": "2faa14a71c6d24cc773f93e46e00f75e", 
+            "name": "verysync", 
+            "tar_url": "verysync/verysync.tar.gz", 
+            "title": "微力同步", 
+            "version": "1.0.0"
+        }, 
+        {
             "build_date": "2019-08-12_17:46:21", 
             "description": "这是一只自动帮你签到的dog", 
             "home_url": "Module_qiandao.asp", 
