@@ -37,7 +37,19 @@ softcenter_install() {
 		cp -rf /tmp/softcenter/.soft_ver /jffs/softcenter/
 		dbus set softcenter_version=`cat /jffs/softcenter/.soft_ver`
 		dbus set softcenter_firmware_version=`nvram get extendno|cut -d "_" -f2|cut -d "-" -f1|cut -c2-5`
-		dbus set softcenter_arch=`uname -m`
+		ARCH=`uname -m`
+		KVER=`uname -r`
+		if [ "$ARCH" == "armv7l" ]; then
+			if [ "$KVER" == "4.1.52" -o "$KVER" == "4.1.49" ];then
+				dbus set softcenter_arch="armng"
+			elif [ "$KVER" == "3.14.77" ];then
+				dbus set softcenter_arch="armqca"
+			else
+				dbus set softcenter_arch="$ARCH"
+			fi
+		else
+			dbus set softcenter_arch="$ARCH"
+		fi
 		dbus set softcenter_api=`cat /jffs/softcenter/.soft_ver`
 		# make some link
 		if [ "`nvram get productid`" == "BLUECAVE" ];then
