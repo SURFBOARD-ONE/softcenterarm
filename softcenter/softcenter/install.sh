@@ -36,7 +36,7 @@ softcenter_install() {
 		cp -rf /tmp/softcenter/scripts/* /jffs/softcenter/scripts
 		cp -rf /tmp/softcenter/.soft_ver /jffs/softcenter/
 		dbus set softcenter_version=`cat /jffs/softcenter/.soft_ver`
-		dbus set softcenter_firmware_version=`nvram get extendno|cut -d "_" -f2|cut -d "-" -f1|cut -c2-5`
+		dbus set softcenter_firmware_version=`nvram get extendno|cut -d "_" -f2|cut -d "-" -f1|cut -c2-6`
 		ARCH=`uname -m`
 		KVER=`uname -r`
 		if [ "$ARCH" == "armv7l" ]; then

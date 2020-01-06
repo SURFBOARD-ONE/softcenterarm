@@ -151,6 +151,16 @@
             "version": "1.1"
         }, 
         {
+            "build_date": "2020-01-06_18:45:33", 
+            "description": "腾讯云ddns", 
+            "home_url": "Module_tenddns.asp", 
+            "md5": "01707652b496cd51fa971afb2adee3c3", 
+            "name": "tenddns", 
+            "tar_url": "tenddns/tenddns.tar.gz", 
+            "title": "腾讯云ddns", 
+            "version": "0.0.1"
+        }, 
+        {
             "build_date": "2019-08-12_17:46:21", 
             "description": "这是一只自动帮你签到的dog", 
             "home_url": "Module_qiandao.asp", 
@@ -211,14 +221,14 @@
             "version": "3.0"
         }, 
         {
-            "build_date": "2019-07-24_11:34:18", 
+            "build_date": "2020-01-06_18:44:44", 
             "description": "使用Dnspod的ddns服务", 
             "home_url": "Module_ddnspod.asp", 
-            "md5": "ec9946301228b8fdc7221045e503194f", 
+            "md5": "21c26fc91285696aae73fd3c2e8116cb", 
             "name": "ddnspod", 
             "tar_url": "ddnspod/ddnspod.tar.gz", 
             "title": "DDnspod", 
-            "version": "1.3"
+            "version": "1.4"
         }, 
         {
             "build_date": "2019-09-26_21:31:33", 
@@ -241,14 +251,14 @@
             "version": "1.3"
         }, 
         {
-            "build_date": "2019-11-06_12:05:27", 
+            "build_date": "2020-01-06_18:44:24", 
             "description": "从路由器推送状态及通知的工具", 
             "home_url": "Module_serverchan.asp", 
-            "md5": "adfe71fa65da2e6b7cea4b6ecbe1198c", 
+            "md5": "3adb3805938a4d36f24aff9dd5550daa", 
             "name": "serverchan", 
             "tar_url": "serverchan/serverchan.tar.gz", 
             "title": "ServerChan微信推送", 
-            "version": "1.3"
+            "version": "1.4"
         }, 
         {
             "build_date": "2019-07-24_10:04:58", 
@@ -262,7 +272,7 @@
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
-    "md5": "e75dde80549ae9854b22d9efb3191bce", 
+    "md5": "eca624366e5cc51e2afe6f1b662b63d9", 
     "tar_url": "softcenter/softcenter.tar.gz", 
-    "version": "1.2.3"
+    "version": "1.2.4"
 }
