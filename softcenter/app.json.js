@@ -1,14 +1,24 @@
 {
     "apps": [
         {
-            "build_date": "2019-11-17_21:49:12", 
+            "build_date": "2020-03-06_00:38:10", 
+            "description": "解锁网易云灰色歌曲", 
+            "home_url": "Module_unblockmusic.asp", 
+            "md5": "2b27ca5b7f196d24452bc5236baa6b04", 
+            "name": "unblockmusic", 
+            "tar_url": "unblockmusic/unblockmusic.tar.gz", 
+            "title": "解锁网易云灰色歌曲", 
+            "version": "1.0.0"
+        }, 
+        {
+            "build_date": "2020-03-06_00:34:59", 
             "description": "KPR更多规则更舒服！", 
             "home_url": "Module_koolproxyR.asp", 
-            "md5": "c06fb67be37aeae6085237cce184a1c5", 
+            "md5": "52cd1d5ee78c7e9b8ab904f9d069529a", 
             "name": "koolproxyR", 
             "tar_url": "koolproxyR/koolproxyR.tar.gz", 
             "title": "koolproxyR", 
-            "version": "1.0.1"
+            "version": "1.0.2"
         }, 
         {
             "build_date": "2019-11-17_21:49:27", 
@@ -191,16 +201,6 @@
             "version": "1.3"
         }, 
         {
-            "build_date": "2019-08-12_22:07:34", 
-            "description": "网易uu", 
-            "home_url": "Module_uu.asp", 
-            "md5": "4d28dd18649b2e46daeefdd6b78edb1e", 
-            "name": "uu", 
-            "tar_url": "uu/uu.tar.gz", 
-            "title": "网易uu", 
-            "version": "1.2.12"
-        }, 
-        {
             "build_date": "2019-08-12_17:46:31", 
             "description": "VPN全家桶, ver 4.29 build 9680", 
             "home_url": "Module_softether.asp", 
@@ -282,7 +282,7 @@
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
-    "md5": "eca624366e5cc51e2afe6f1b662b63d9", 
+    "md5": "9b07f4be402b95bb386c9a225eafb959", 
     "tar_url": "softcenter/softcenter.tar.gz", 
-    "version": "1.2.4"
+    "version": "1.2.5"
 }
