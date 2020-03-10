@@ -1,14 +1,14 @@
 {
     "apps": [
         {
-            "build_date": "2020-03-06_00:38:10", 
+            "build_date": "2020-03-09_11:55:00", 
             "description": "解锁网易云灰色歌曲", 
             "home_url": "Module_unblockmusic.asp", 
-            "md5": "2b27ca5b7f196d24452bc5236baa6b04", 
+            "md5": "ec3e4f8ceea5e2215fffabdf0bc5785e", 
             "name": "unblockmusic", 
             "tar_url": "unblockmusic/unblockmusic.tar.gz", 
             "title": "解锁网易云灰色歌曲", 
-            "version": "1.0.0"
+            "version": "1.0.1"
         }, 
         {
             "build_date": "2020-03-06_00:34:59", 
@@ -261,14 +261,14 @@
             "version": "1.3"
         }, 
         {
-            "build_date": "2020-01-06_18:44:24", 
+            "build_date": "2020-03-10_12:24:42", 
             "description": "从路由器推送状态及通知的工具", 
             "home_url": "Module_serverchan.asp", 
-            "md5": "3adb3805938a4d36f24aff9dd5550daa", 
+            "md5": "2089d39a09677bbbaebefbed73fbdcef", 
             "name": "serverchan", 
             "tar_url": "serverchan/serverchan.tar.gz", 
             "title": "ServerChan微信推送", 
-            "version": "1.4"
+            "version": "1.5"
         }, 
         {
             "build_date": "2019-07-24_10:04:58", 
