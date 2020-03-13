@@ -21,10 +21,10 @@
             "version": "1.0.2"
         }, 
         {
-            "build_date": "2020-03-13_10:25:51", 
+            "build_date": "2020-03-13_11:58:14", 
             "description": "科学上网", 
             "home_url": "Main_Ss_Content.asp", 
-            "md5": "5bb0a783d507ad22a1cb2e88b9c6585f", 
+            "md5": "963667242ff0ed64bf3ba6e849009243", 
             "name": "shadowsocks", 
             "tar_url": "shadowsocks/shadowsocks.tar.gz", 
             "title": "科学上网", 
@@ -191,10 +191,10 @@
             "version": "1.5"
         }, 
         {
-            "build_date": "2019-08-27_19:45:19", 
+            "build_date": "2020-03-13_11:57:57", 
             "description": "aliddns", 
             "home_url": "Module_aliddns.asp", 
-            "md5": "0aa254f2190aab7f489856fc70d2291b", 
+            "md5": "f5b390c023d0dad3e2ddb04de2c0afff", 
             "name": "aliddns", 
             "tar_url": "aliddns/aliddns.tar.gz", 
             "title": "阿里DDNS", 
