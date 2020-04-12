@@ -181,16 +181,6 @@
             "version": "1.0.0"
         }, 
         {
-            "build_date": "2020-04-12_19:13:07", 
-            "description": "旁路由助手", 
-            "home_url": "Module_bypasshelper.asp", 
-            "md5": "4a3a58b210492b1939abd4ef88a79078", 
-            "name": "bypasshelper", 
-            "tar_url": "bypasshelper/bypasshelper.tar.gz", 
-            "title": "旁路由助手", 
-            "version": "1.0"
-        }, 
-        {
             "build_date": "2019-08-12_17:46:21", 
             "description": "这是一只自动帮你签到的dog", 
             "home_url": "Module_qiandao.asp", 
