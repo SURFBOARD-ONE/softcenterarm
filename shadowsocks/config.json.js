@@ -1,8 +1,8 @@
 {
-"version":"4.2.6",
-"md5":"8e805e1c553e60802fe5b2433c1e695f",
+"version":"4.2.7",
+"md5":"fcae0d6a92d7a3ab160d70f1da50cef3",
 "home_url":"Main_Ss_Content.asp",
 "title":"科学上网",
 "description":"科学上网",
-"build_date":"2020-04-03_12:36:02"
+"build_date":"2020-04-17_18:33:49"
 }
