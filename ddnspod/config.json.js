@@ -1,8 +1,8 @@
 {
-"version":"1.4",
-"md5":"21c26fc91285696aae73fd3c2e8116cb",
+"version":"1.5",
+"md5":"60920c24b472f1bba46be82f53fb520d",
 "home_url":"Module_ddnspod.asp",
 "title":"DDnspod",
 "description":"使用Dnspod的ddns服务",
-"build_date":"2020-01-06_18:44:44"
+"build_date":"2020-05-21_08:23:58"
 }
