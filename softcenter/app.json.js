@@ -81,10 +81,10 @@
             "version": "2.3"
         }, 
         {
-            "build_date": "2019-10-20_11:02:32", 
+            "build_date": "2020-05-21_09:39:56", 
             "description": "解决重启Bug", 
             "home_url": "Module_reboothelper.asp", 
-            "md5": "688696effff2dbdd79167f1a70d93936", 
+            "md5": "a98298146fcc7cc3bf2834770e3b1f2e", 
             "name": "reboothelper", 
             "tar_url": "reboothelper/reboothelper.tar.gz", 
             "title": "重启助手", 
