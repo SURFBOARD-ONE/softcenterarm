@@ -171,10 +171,10 @@
             "version": "0.0.1"
         }, 
         {
-            "build_date": "2020-01-06_22:00:50", 
+            "build_date": "2020-05-21_11:04:08", 
             "description": "自己的私有云", 
             "home_url": "Module_verysync.asp", 
-            "md5": "390f7b0d7601d116e9d265ab29a9d68f", 
+            "md5": "d896cdfd6d3677e1d8a15ac1c1090a71", 
             "name": "verysync", 
             "tar_url": "verysync/verysync.tar.gz", 
             "title": "微力同步", 
