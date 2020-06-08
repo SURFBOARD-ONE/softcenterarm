@@ -21,16 +21,6 @@
             "version": "1.0.3"
         }, 
         {
-            "build_date": "2020-05-21_21:59:58", 
-            "description": "科学上网", 
-            "home_url": "Main_Ss_Content.asp", 
-            "md5": "6c721d7f4dfeb81c9d585cc464deec9c", 
-            "name": "shadowsocks", 
-            "tar_url": "shadowsocks/shadowsocks.tar.gz", 
-            "title": "科学上网", 
-            "version": "4.2.8"
-        }, 
-        {
             "build_date": "2020-05-21_10:54:56", 
             "description": "超强的SSH网页客户端~", 
             "home_url": "Module_shellinabox.asp", 
@@ -121,16 +111,6 @@
             "version": "1.8"
         }, 
         {
-            "build_date": "2020-05-21_11:01:09", 
-            "description": "ss-server", 
-            "home_url": "Module_ssserver.asp", 
-            "md5": "57ad25f2066bb32deb4636be821b04ec", 
-            "name": "ssserver", 
-            "tar_url": "ssserver/ssserver.tar.gz", 
-            "title": "ss-server", 
-            "version": "2.4"
-        }, 
-        {
             "build_date": "2020-05-21_09:29:49", 
             "description": "kms", 
             "home_url": "Module_kms.asp", 
@@ -191,6 +171,16 @@
             "version": "1.6"
         }, 
         {
+            "build_date": "2020-06-06_13:57:46", 
+            "description": "内网穿透利器，谁用谁知道。", 
+            "home_url": "Module_frps.asp", 
+            "md5": "8945e1037797fed469f7db89a96ce129", 
+            "name": "frps", 
+            "tar_url": "frps/frps.tar.gz", 
+            "title": "frps穿透服务器", 
+            "version": "1.5"
+        }, 
+        {
             "build_date": "2020-05-28_09:18:17", 
             "description": "aliddns", 
             "home_url": "Module_aliddns.asp", 
@@ -241,16 +231,6 @@
             "version": "1.5"
         }, 
         {
-            "build_date": "2019-09-26_21:31:33", 
-            "description": "v2ray", 
-            "home_url": "Module_v2ray.asp", 
-            "md5": "fc0cba943a7eb76cd3f692ddaa49f059", 
-            "name": "v2ray", 
-            "tar_url": "v2ray/v2ray.tar.gz", 
-            "title": "v2ray", 
-            "version": "4.18.2"
-        }, 
-        {
             "build_date": "2020-05-21_08:15:23", 
             "description": "百度盘", 
             "home_url": "Module_baidupcs.asp", 
@@ -282,7 +262,7 @@
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
-    "md5": "9eb8414f70c7d40062de767e31163e99", 
+    "md5": "7c1f9ee5714c7cbb6b4b1c7c6f9b4a19", 
     "tar_url": "softcenter/softcenter.tar.gz", 
-    "version": "1.2.7"
+    "version": "1.2.8"
 }
