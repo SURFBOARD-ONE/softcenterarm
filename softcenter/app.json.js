@@ -191,6 +191,16 @@
             "version": "2.2"
         }, 
         {
+            "build_date": "2020-06-11_10:56:47", 
+            "description": "易有云2.0 （LinkEase） 手机相册同步，PC 双向同步！", 
+            "home_url": "Module_linkease.asp", 
+            "md5": "095c1f69022931ed2df596a84175eea1", 
+            "name": "linkease", 
+            "tar_url": "linkease/linkease.tar.gz", 
+            "title": "易有云2.0", 
+            "version": "2.5"
+        }, 
+        {
             "build_date": "2020-05-21_11:00:18", 
             "description": "VPN全家桶, ver 4.29 build 9680", 
             "home_url": "Module_softether.asp", 
