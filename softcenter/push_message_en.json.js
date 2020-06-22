@@ -1,6 +1,6 @@
 {
 "title":"<em>MerlinR&nbsp;-&nbsp;Software Center</em>",
-"content1":"<b>Software Center: Latset version:1.2.6</b>,First update the firmware to 5.0.8 or later,<font color='#1E90FF'> then update the software center</font>",
+"content1":"<b>Software Center: Latset version:1.2.9</b>,First update the firmware to 5.0.8 or later,<font color='#1E90FF'> then update the software center</font>",
 "content2":"some plugins download slowly,Refresh the page after 5 minutes",
 "content3":"<font color='#1E90FF'>feedback:&nbsp;&nbsp;</font>\
 <a href='https://github.com/paldier/softcenter' target='_blank'><em>1.GitHub</em></a>&nbsp;&nbsp;&nbsp;&nbsp;\

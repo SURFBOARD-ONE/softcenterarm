@@ -1,6 +1,6 @@
 {
 "title":"<em>梅林固件&nbsp;-&nbsp;软件中心</em>",
-"content1":"<b>软件中心：新版1.2.6已经更新，添加多語言支持</b>,务必先更新固件到5.0.8或以上<font color='#1E90FF'>在更新软件中心</font>",
+"content1":"<b>软件中心：新版1.2.9已经更新，添加R7000P支持</b>,务必先更新固件到5.0.8或以上<font color='#1E90FF'>在更新软件中心</font>",
 "content2":"部分插件下载缓慢，5分钟后刷新查看",
 "content3":"<font color='#1E90FF'>交流反馈:&nbsp;&nbsp;</font>\
 <a href='https://github.com/paldier/softcenterarm' target='_blank'><em>1.软件中心GitHub项目</em></a>&nbsp;&nbsp;&nbsp;&nbsp;\

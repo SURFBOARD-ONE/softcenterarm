@@ -1,14 +1,14 @@
 {
     "apps": [
         {
-            "build_date": "2020-05-21_11:03:01", 
+            "build_date": "2020-06-20_21:40:39", 
             "description": "解锁网易云灰色歌曲", 
             "home_url": "Module_unblockmusic.asp", 
-            "md5": "ca74951fcfb62affe3a51bf3c0e3e00e", 
+            "md5": "f34118a668a6b3dd0b9251d83e7edf81", 
             "name": "unblockmusic", 
             "tar_url": "unblockmusic/unblockmusic.tar.gz", 
             "title": "解锁网易云灰色歌曲", 
-            "version": "1.0.2"
+            "version": "1.0.3"
         }, 
         {
             "build_date": "2020-05-21_09:33:38", 
@@ -91,10 +91,10 @@
             "version": "3.8.4.3"
         }, 
         {
-            "build_date": "2020-05-21_07:46:58", 
+            "build_date": "2020-06-22_08:33:01", 
             "description": "linux下载利器", 
             "home_url": "Module_aria2.asp", 
-            "md5": "adebebcb0accf8dc4048c44ad5f0d5d3", 
+            "md5": "52d60714fdeab6780ea6ded28fce2cc9", 
             "name": "aria2", 
             "tar_url": "aria2/aria2.tar.gz", 
             "title": "Aria2", 
@@ -272,7 +272,7 @@
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
-    "md5": "7c1f9ee5714c7cbb6b4b1c7c6f9b4a19", 
+    "md5": "2a89dad396c305b04edc394af09781f5", 
     "tar_url": "softcenter/softcenter.tar.gz", 
-    "version": "1.2.8"
+    "version": "1.2.9"
 }
