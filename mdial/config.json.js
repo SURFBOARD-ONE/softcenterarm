@@ -1,8 +1,8 @@
 {
-"version":"1.5",
-"md5":"e5c5cba37a6be5973487f823e7d3f7b8",
+"version":"1.6",
+"md5":"13ce6222d901cc86fea7a8c69fa18167",
 "home_url":"Module_mdial.asp",
 "title":"单线多拨",
 "description":"pppoe单线多拨，带宽提升神器！",
-"build_date":"2020-05-21_09:37:42"
+"build_date":"2020-08-13_09:57:04"
 }
