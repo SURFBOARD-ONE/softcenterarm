@@ -81,6 +81,16 @@
             "version": "2.9"
         }, 
         {
+            "build_date": "2020-08-13_16:49:28", 
+            "description": "灵缇游戏加速插件", 
+            "home_url": "Module_lingti.asp", 
+            "md5": "2958473ad909a490dd0b12ae0dd82f50", 
+            "name": "lingti", 
+            "tar_url": "lingti/lingti.tar.gz", 
+            "title": "灵缇游戏加速插件", 
+            "version": "1.0.0"
+        }, 
+        {
             "build_date": "2020-08-13_09:02:48", 
             "description": "内网穿透利器，谁用谁知道。", 
             "home_url": "Module_frpc.asp", 
