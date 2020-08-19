@@ -11,6 +11,16 @@
             "version": "1.0.6"
         }, 
         {
+            "build_date": "2020-08-19_13:49:44", 
+            "description": "腾讯游戏加速插件", 
+            "home_url": "Module_qmacc.asp", 
+            "md5": "42aa90c44cb56a489520080341cf149b", 
+            "name": "qmacc", 
+            "tar_url": "qmacc/qmacc.tar.gz", 
+            "title": "腾讯游戏加速插件", 
+            "version": "1.0.0"
+        }, 
+        {
             "build_date": "2020-08-13_09:34:49", 
             "description": "KPR更多规则更舒服！", 
             "home_url": "Module_koolproxyR.asp", 
