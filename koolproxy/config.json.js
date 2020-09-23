@@ -1,8 +1,8 @@
 {
-"version":"3.8.4.4",
-"md5":"ebd3d6c874d1dc55c925ffaa2b118de9",
+"version":"3.8.5.0",
+"md5":"6b13c6060a82c1f47f6744597b95a20a",
 "home_url":"Module_koolproxy.asp",
 "title":"koolproxy",
 "description":"去广告，没烦恼",
-"build_date":"2020-08-13_09:30:30"
+"build_date":"2020-09-23_13:11:06"
 }
