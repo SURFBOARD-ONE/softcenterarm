@@ -31,6 +31,16 @@
             "version": "2.2"
         }, 
         {
+            "build_date": "2020-09-30_15:28:25", 
+            "description": "FileBrowser：您的可视化路由文件管理系统", 
+            "home_url": "Module_filebrowser.asp", 
+            "md5": "0cf9a6929bc43afa53562896d104f972", 
+            "name": "filebrowser", 
+            "tar_url": "filebrowser/filebrowser.tar.gz", 
+            "title": "filebrowser", 
+            "version": "1.0.2"
+        }, 
+        {
             "build_date": "2020-08-12_14:44:25", 
             "description": "Cloudflare解析自动更新IP", 
             "home_url": "Module_cfddns.asp", 
