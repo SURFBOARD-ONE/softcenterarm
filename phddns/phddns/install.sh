@@ -40,13 +40,7 @@ elif [ "$TUF" == "1" ];then
 else
 	sed -i '/rogcss/d' /jffs/softcenter/webs/Module_phddns.asp >/dev/null 2>&1
 fi
-if [ -f /jffs/softcenter/init.d/S60Phddns.sh ]; then
-	rm -rf /jffs/softcenter/init.d/S60Phddns.sh
-fi
 
-if [ -L /jffs/softcenter/init.d/S60Phddns.sh ]; then
-	rm -rf /jffs/softcenter/init.d/S60Phddns.sh
-fi
 cp -rf /tmp/phddns/init.d/* /jffs/softcenter/init.d/
 #chmod 755 /jffs/softcenter/init.d/*
 chmod 755 /jffs/softcenter/scripts/phddns_*.sh

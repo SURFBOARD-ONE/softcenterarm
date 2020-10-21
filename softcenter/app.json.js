@@ -11,14 +11,14 @@
             "version": "1.0.7"
         }, 
         {
-            "build_date": "2020-08-19_13:49:44", 
+            "build_date": "2020-10-21_14:31:51", 
             "description": "腾讯游戏加速插件", 
             "home_url": "Module_qmacc.asp", 
-            "md5": "42aa90c44cb56a489520080341cf149b", 
+            "md5": "1f16eabef8bf20094028cb03403eedb1", 
             "name": "qmacc", 
             "tar_url": "qmacc/qmacc.tar.gz", 
             "title": "腾讯游戏加速插件", 
-            "version": "1.0.0"
+            "version": "1.0.1"
         }, 
         {
             "build_date": "2020-05-21_10:54:56", 
@@ -241,14 +241,14 @@
             "version": "2.0"
         }, 
         {
-            "build_date": "2020-09-15_16:34:27", 
+            "build_date": "2020-10-19_16:36:53", 
             "description": "花生壳内网版3.0 （phddns） 动态域名 内网穿透", 
             "home_url": "Module_phddns.asp", 
-            "md5": "9e0a0c7920ddcfeea33e0d763aaf523d", 
+            "md5": "85502e1c9625632083c75bba07d049d7", 
             "name": "phddns", 
             "tar_url": "phddns/phddns.tar.gz", 
             "title": "花生壳3.0", 
-            "version": "3.0.2"
+            "version": "3.0.3"
         }, 
         {
             "build_date": "2020-08-12_14:31:08", 
