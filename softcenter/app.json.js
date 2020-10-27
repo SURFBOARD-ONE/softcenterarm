@@ -161,14 +161,14 @@
             "version": "1.7"
         }, 
         {
-            "build_date": "2020-08-13_09:03:54", 
+            "build_date": "2020-10-27_20:12:30", 
             "description": "内网穿透利器，谁用谁知道。", 
             "home_url": "Module_frps.asp", 
-            "md5": "c0b07018e37b465352db54e661dea377", 
+            "md5": "286ddd1729d75795e7f76263017438dc", 
             "name": "frps", 
             "tar_url": "frps/frps.tar.gz", 
             "title": "frps穿透服务器", 
-            "version": "1.6"
+            "version": "1.7"
         }, 
         {
             "build_date": "2020-08-12_14:32:41", 
