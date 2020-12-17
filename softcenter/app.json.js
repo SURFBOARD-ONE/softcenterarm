@@ -71,14 +71,14 @@
             "version": "0.4"
         }, 
         {
-            "build_date": "2020-09-23_13:11:06", 
+            "build_date": "2020-12-17_08:56:07", 
             "description": "去广告，没烦恼", 
             "home_url": "Module_koolproxy.asp", 
-            "md5": "6b13c6060a82c1f47f6744597b95a20a", 
+            "md5": "20341db18b037d7d45c08523a703f6ea", 
             "name": "koolproxy", 
             "tar_url": "koolproxy/koolproxy.tar.gz", 
             "title": "koolproxy", 
-            "version": "3.8.5.0"
+            "version": "3.8.5.1"
         }, 
         {
             "build_date": "2020-08-12_14:39:49", 
