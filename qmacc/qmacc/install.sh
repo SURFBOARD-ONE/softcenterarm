@@ -43,7 +43,7 @@ dbus set softcenter_module_qmacc_description="腾讯游戏加速插件"
 dbus set softcenter_module_qmacc_install=1
 dbus set softcenter_module_qmacc_name=qmacc
 dbus set softcenter_module_qmacc_title="腾讯游戏加速插件"
-dbus set qmacc_bin_version="1.0.0.60"
+dbus set qmacc_bin_version="1.0.0.74"
 if [ "$enable" == "1" ] && [ -f "/jffs/softcenter/scripts/qmacc_config.sh" ];then
 	/jffs/softcenter/scripts/qmacc_config start >/dev/null 2>&1
 fi

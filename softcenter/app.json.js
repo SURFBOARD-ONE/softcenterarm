@@ -11,14 +11,14 @@
             "version": "1.1.1"
         }, 
         {
-            "build_date": "2020-10-21_14:31:51", 
+            "build_date": "2021-03-24_20:00:01", 
             "description": "腾讯游戏加速插件", 
             "home_url": "Module_qmacc.asp", 
-            "md5": "1f16eabef8bf20094028cb03403eedb1", 
+            "md5": "6cc411d87df5ac46bff0afc1984dad6a", 
             "name": "qmacc", 
             "tar_url": "qmacc/qmacc.tar.gz", 
             "title": "腾讯游戏加速插件", 
-            "version": "1.0.1"
+            "version": "1.0.2"
         }, 
         {
             "build_date": "2020-05-21_10:54:56", 

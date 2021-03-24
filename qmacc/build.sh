@@ -1,7 +1,7 @@
 #!/bin/sh
 
 MODULE="qmacc"
-VERSION="1.0.1"
+VERSION="1.0.2"
 TITLE="腾讯游戏加速插件"
 DESCRIPTION="腾讯游戏加速插件"
 HOME_URL="Module_qmacc.asp"
