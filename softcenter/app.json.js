@@ -282,7 +282,7 @@
         }
     ], 
     "home_url": "https://raw.githubusercontent.com/paldier/softcenterarm/master", 
-    "md5": "1ba0efbd83608a70d1f20792be7851af", 
+    "md5": "bb539f193d13fa361305557d5cb7344a", 
     "tar_url": "softcenter/softcenter.tar.gz", 
-    "version": "1.3.7"
+    "version": "1.3.8"
 }
