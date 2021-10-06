@@ -81,14 +81,14 @@
             "version": "3.8.5.4"
         }, 
         {
-            "build_date": "2020-08-12_14:39:49", 
+            "build_date": "2021-10-06_22:55:37", 
             "description": "linux下载利器", 
             "home_url": "Module_aria2.asp", 
-            "md5": "0d72bd2e8d1b14724b38b34a7cc46861", 
+            "md5": "cfd95bab3b80f6468ba9021ae45496f8", 
             "name": "aria2", 
             "tar_url": "aria2/aria2.tar.gz", 
             "title": "Aria2", 
-            "version": "2.9"
+            "version": "3.0"
         }, 
         {
             "build_date": "2021-03-24_19:54:59", 
