@@ -41,14 +41,14 @@
             "version": "1.0.4"
         }, 
         {
-            "build_date": "2021-09-13_10:21:29", 
+            "build_date": "2021-11-06_14:05:05", 
             "description": "Cloudflare解析自动更新IP", 
             "home_url": "Module_cfddns.asp", 
-            "md5": "db4208b047cbb39a126bb5b3c641e3a9", 
+            "md5": "65cf790cd0d1a490bf5fb2728be4e1b1", 
             "name": "cfddns", 
             "tar_url": "cfddns/cfddns.tar.gz", 
             "title": "Cloudflare DDNS", 
-            "version": "1.6"
+            "version": "1.7"
         }, 
         {
             "build_date": "2020-08-13_11:56:24", 
