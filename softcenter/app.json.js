@@ -1,14 +1,14 @@
 {
     "apps": [
         {
-            "build_date": "2021-11-16_11:49:13", 
+            "build_date": "2021-11-21_13:17:20", 
             "description": "局域网网速测试工具", 
             "home_url": "Module_speedtest.asp", 
-            "md5": "2b54295a55e6e492235ea411b2191eb7", 
+            "md5": "8102312bcc7aaa6c2b6e63aa2f5973ae", 
             "name": "speedtest", 
             "tar_url": "speedtest/speedtest.tar.gz", 
             "title": "局域网测速", 
-            "version": "0.0.1"
+            "version": "0.0.2"
         }, 
         {
             "build_date": "2021-11-16_18:19:33", 
